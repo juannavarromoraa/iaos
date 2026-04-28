@@ -1,0 +1,11 @@
+# Corpus de Investigación: Financiación y Software
+
+Este archivo contiene la selección preliminar de artículos para el Assignment 2. Se han seleccionado por su relevancia en la relación entre agencias financiadoras y desarrollo de software abierto.
+
+| Título del Artículo | DOI | OpenAlex ID |
+| :--- | :--- | :--- |
+| Linking Global Science Funding to Research Publications | [10.1162/qss_a_00114](https://doi.org/10.1162/qss_a_00114) | [W3125134781](https://openalex.org/W3125134781) |
+| SMECS: A Software Metadata Extraction and Curation Software | [10.1109/eScience.2021.00024](https://doi.org/10.1109/eScience.2021.00024) | [W3165243164](https://openalex.org/W3165243164) |
+| The FAIR Principles for Research Software (FAIR4RS) | [10.1038/s41597-022-01141-w](https://doi.org/10.1038/s41597-022-01141-w) | [W4211124619](https://openalex.org/W4211124619) |
+| Sustainable research software for high-quality computational research | [10.12688/f1000research.23224.2](https://doi.org/10.12688/f1000research.23224.2) | [W3121356499](https://openalex.org/W3121356499) |
+| Towards a sustainable astronomical data infrastructure | [10.12688/openreseurope.13362.1](https://doi.org/10.12688/openreseurope.13362.1) | [W3122184065](https://openalex.org/W3122184065) |
