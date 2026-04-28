@@ -20,5 +20,5 @@ Para construir y enriquecer nuestro grafo, utilizamos dos fuentes principales:
 * `/data`: Contiene la selección del corpus de 30 artículos (5 ejemplos preliminares ya disponibles).
 * `/documentation`: Documento detallados sobre el diseño y el caso de uso.
 
-## 6. Licencia
+## 5. Licencia
 Este proyecto está bajo la Licencia **MIT**. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
