@@ -17,9 +17,12 @@ Para construir y enriquecer nuestro grafo, utilizamos dos fuentes principales:
 2. **SPARQL Endpoint - [Wikidata](https://query.wikidata.org/):** Utilizada para enriquecer la información de las agencias de financiación (país, tipo de entidad, sede).
 
 ## 4. Estructura del Repositorio
-├── diagrama.png # Contiene el diagrama de la ontología. 
-├── data/ # Contiene la selección del corpus de 30 artículos (5 ejemplos preliminares). 
-└── documentation/ # Documentos detallados sobre el diseño y el caso de uso.
+```text
+/
+├── diagrama.png          # Contiene el diagrama de la ontología.
+├── data/                 # Contiene la selección del corpus de 30 artículos (5 preliminares).
+└── documentation/        # Documentos detallados sobre el diseño y el caso de uso.
+```
 
 ## 5. Licencia
 Este proyecto está bajo la Licencia **MIT**. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
