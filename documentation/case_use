@@ -1,0 +1,38 @@
+# Caso de Uso: Sostenibilidad y Financiación del Software de Investigación
+
+## 1. Descripción del Caso de Uso
+El objetivo de este proyecto es construir un Grafo de Conocimiento (KG) que permita analizar la relación entre la financiación pública recibida por los investigadores y la producción de software científico abierto. 
+
+En la comunidad científica, gran parte del software desarrollado durante proyectos de investigación carece de mantenimiento a largo plazo una vez finaliza el "grant" o financiación. Con este grafo, pretendemos identificar patrones de éxito: ¿Qué agencias de financiación están apoyando los proyectos que resultan en software más popular (medido por estrellas en GitHub) o mejor documentado?
+
+**Preguntas que responderá el grafo:**
+- ¿Qué agencias de financiación (ej. European Commission, NSF) han financiado los artículos que enlazan a repositorios de código en GitHub?
+- ¿Cuál es la distribución geográfica de las agencias que impulsan software de código abierto?
+- ¿Existe una correlación entre el tipo de institución (pública vs. privada) y la apertura del código desarrollado?
+
+## 2. Fuentes de Datos y Enriquecimiento
+Para la construcción y el enriquecimiento del grafo se han seleccionado las siguientes fuentes:
+
+### 2.1 API REST: OpenAlex
+- **Propósito:** Actuará como nuestra fuente principal de metadatos académicos.
+- **Datos a extraer:** De nuestro corpus de 30 artículos, utilizaremos OpenAlex para obtener:
+    - Metadatos del artículo (título, DOI, fecha).
+    - Información de autores y sus afiliaciones (IDs de ROR).
+    - **Grants:** IDs de los proyectos de financiación asociados al paper.
+    - **Enlaces externos:** Detección de URLs a repositorios de código (GitHub/GitLab).
+
+### 2.2 SPARQL Endpoint: Wikidata
+- **Propósito:** Enriquecer las entidades de "Agencia Financiadora" (Funder).
+- **Datos a extraer:** Una vez identificadas las agencias a través de los grants en OpenAlex, realizaremos consultas SPARQL a Wikidata para obtener:
+    - País de origen de la agencia.
+    - Naturaleza jurídica (entidad gubernamental, organización sin ánimo de lucro, empresa privada).
+    - Sede central y coordenadas geográficas.
+
+## 3. Propuesta de Ontología
+El grafo se estructurará siguiendo los elementos mínimos requeridos en clase:
+- **Clases:** `Paper`, `Author`, `Organization`, `Grant`, `Funder`, `SoftwareRepository`.
+- **Relaciones Clave:**
+    - `Author` --(affiliatedWith)--> `Organization`
+    - `Paper` --(fundedBy)--> `Grant`
+    - `Grant` --(providedBy)--> `Funder`
+    - `Paper` --(isAccompaniedBy)--> `SoftwareRepository`
