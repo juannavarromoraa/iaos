@@ -1,0 +1,183 @@
+@prefix iaos:   <https://w3id.org/iaos/ontology#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:<http://purl.org/dc/terms/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix schema: <http://schema.org/> .
+
+#######################################################################
+#                        IAOS Ontology                                #
+#  Knowledge Graph for Research Software Funding (Grupo 10)           #
+#  Aligned with diagram (n-ary relations for thresholds + temporal)   #
+#######################################################################
+
+<https://w3id.org/iaos/ontology> a owl:Ontology ;
+    dcterms:title "IAOS Ontology: Research Software Funding KG"@en ;
+    dcterms:description "Vocabulary for representing papers, software, authors, organizations (ROR), funders and topics, including n-ary relations for thresholded topic assignments, similarity scores and time-bounded affiliations."@en ;
+    dcterms:creator "Grupo 10 - IA y Open Science 2026 (UPM)" ;
+    owl:versionInfo "1.0.0" ;
+    dcterms:license <https://opensource.org/licenses/MIT> .
+
+#######################################################################
+#  Classes
+#######################################################################
+
+iaos:Paper a owl:Class ;
+    rdfs:label "Paper"@en ;
+    rdfs:comment "A scientific paper (publication) with metadata."@en ;
+    rdfs:subClassOf schema:ScholarlyArticle .
+
+iaos:Person a owl:Class ;
+    rdfs:label "Person (Author)"@en ;
+    rdfs:comment "A researcher who can author papers and be affiliated to organizations over time."@en ;
+    rdfs:subClassOf foaf:Person .
+
+iaos:Organization a owl:Class ;
+    rdfs:label "Organization"@en ;
+    rdfs:comment "Research organization or funding agency identified via ROR."@en ;
+    rdfs:subClassOf foaf:Organization .
+
+iaos:Topic a owl:Class ;
+    rdfs:label "Topic"@en ;
+    rdfs:comment "Latent topic discovered by topic-modeling on the abstracts."@en .
+
+iaos:Project a owl:Class ;
+    rdfs:label "Project (Grant)"@en ;
+    rdfs:comment "Funded research project / grant."@en .
+
+iaos:SoftwareMention a owl:Class ;
+    rdfs:label "SoftwareMention"@en ;
+    rdfs:comment "Software artifact extracted from a paper via Grobid + ML NER and (when possible) linked to its public repository."@en ;
+    rdfs:subClassOf schema:SoftwareApplication .
+
+#######################################################################
+#  N-ary relation classes (the dashed boxes in the diagram)
+#######################################################################
+
+iaos:Affiliation a owl:Class ;
+    rdfs:label "Affiliation"@en ;
+    rdfs:comment "N-ary class reifying the membership of a Person in an Organization for a given time interval. Captures that an author can belong to several organizations along their life."@en .
+
+iaos:TopicAssignment a owl:Class ;
+    rdfs:label "TopicAssignment"@en ;
+    rdfs:comment "N-ary class reifying the assignment of a Topic to a Paper. Stores the probability output by the topic model and the threshold used to keep the assignment."@en .
+
+iaos:SimilarityRelation a owl:Class ;
+    rdfs:label "SimilarityRelation"@en ;
+    rdfs:comment "N-ary class reifying the similarity between two Papers, with the score, the threshold used and the method (model)."@en .
+
+#######################################################################
+#  Object properties
+#######################################################################
+
+iaos:authorOf a owl:ObjectProperty ;
+    rdfs:label "authorOf"@en ;
+    rdfs:domain iaos:Person ;
+    rdfs:range  iaos:Paper .
+
+iaos:hasAffiliation a owl:ObjectProperty ;
+    rdfs:label "hasAffiliation"@en ;
+    rdfs:domain iaos:Person ;
+    rdfs:range  iaos:Affiliation .
+
+iaos:atOrganization a owl:ObjectProperty ;
+    rdfs:label "atOrganization"@en ;
+    rdfs:domain iaos:Affiliation ;
+    rdfs:range  iaos:Organization .
+
+iaos:hasTopicAssignment a owl:ObjectProperty ;
+    rdfs:label "hasTopicAssignment"@en ;
+    rdfs:domain iaos:Paper ;
+    rdfs:range  iaos:TopicAssignment .
+
+iaos:aboutTopic a owl:ObjectProperty ;
+    rdfs:label "aboutTopic"@en ;
+    rdfs:domain iaos:TopicAssignment ;
+    rdfs:range  iaos:Topic .
+
+iaos:paper1 a owl:ObjectProperty ;
+    rdfs:label "paper1"@en ;
+    rdfs:comment "First paper in a similarity pair."@en ;
+    rdfs:domain iaos:SimilarityRelation ;
+    rdfs:range  iaos:Paper .
+
+iaos:paper2 a owl:ObjectProperty ;
+    rdfs:label "paper2"@en ;
+    rdfs:comment "Second paper in a similarity pair."@en ;
+    rdfs:domain iaos:SimilarityRelation ;
+    rdfs:range  iaos:Paper .
+
+iaos:describesSoftware a owl:ObjectProperty ;
+    rdfs:label "describesSoftware"@en ;
+    rdfs:comment "Asserts that the Paper describes / mentions a piece of Software, as extracted by Grobid + ML pipeline."@en ;
+    rdfs:domain iaos:Paper ;
+    rdfs:range  iaos:SoftwareMention .
+
+iaos:fundedBy a owl:ObjectProperty ;
+    rdfs:label "fundedBy"@en ;
+    rdfs:domain iaos:Paper ;
+    rdfs:range  iaos:Project .
+
+iaos:providedBy a owl:ObjectProperty ;
+    rdfs:label "providedBy"@en ;
+    rdfs:comment "Funding agency (Organization in funder role) that provided the grant."@en ;
+    rdfs:domain iaos:Project ;
+    rdfs:range  iaos:Organization .
+
+iaos:acknowledges a owl:ObjectProperty ;
+    rdfs:label "acknowledges"@en ;
+    rdfs:comment "Entity acknowledged in the Acknowledgements section, extracted via NER."@en ;
+    rdfs:domain iaos:Paper .
+# Range left open: Person OR Organization (union not enforced for SPARQL flexibility).
+
+#######################################################################
+#  Datatype properties
+#######################################################################
+
+# Paper metadata
+iaos:doi          a owl:DatatypeProperty ; rdfs:domain iaos:Paper ; rdfs:range xsd:anyURI .
+iaos:title        a owl:DatatypeProperty ; rdfs:domain iaos:Paper ; rdfs:range xsd:string .
+iaos:abstract     a owl:DatatypeProperty ; rdfs:domain iaos:Paper ; rdfs:range xsd:string .
+iaos:year         a owl:DatatypeProperty ; rdfs:domain iaos:Paper ; rdfs:range xsd:gYear .
+iaos:venue        a owl:DatatypeProperty ; rdfs:domain iaos:Paper ; rdfs:range xsd:string .
+
+# Person
+iaos:name         a owl:DatatypeProperty ; rdfs:range xsd:string .
+iaos:orcid        a owl:DatatypeProperty ; rdfs:domain iaos:Person ; rdfs:range xsd:anyURI .
+
+# Organization (ROR)
+iaos:rorId        a owl:DatatypeProperty ; rdfs:domain iaos:Organization ; rdfs:range xsd:anyURI .
+iaos:country      a owl:DatatypeProperty ; rdfs:domain iaos:Organization ; rdfs:range xsd:string .
+iaos:orgType      a owl:DatatypeProperty ; rdfs:domain iaos:Organization ; rdfs:range xsd:string .
+
+# Topic
+iaos:label        a owl:DatatypeProperty ; rdfs:domain iaos:Topic ; rdfs:range xsd:string .
+iaos:keywords     a owl:DatatypeProperty ; rdfs:domain iaos:Topic ; rdfs:range xsd:string .
+
+# Project
+iaos:grantID      a owl:DatatypeProperty ; rdfs:domain iaos:Project ; rdfs:range xsd:string .
+iaos:budget       a owl:DatatypeProperty ; rdfs:domain iaos:Project ; rdfs:range xsd:decimal .
+
+# Software
+iaos:repoURL      a owl:DatatypeProperty ; rdfs:domain iaos:SoftwareMention ; rdfs:range xsd:anyURI .
+iaos:stars        a owl:DatatypeProperty ; rdfs:domain iaos:SoftwareMention ; rdfs:range xsd:integer .
+iaos:programmingLanguage a owl:DatatypeProperty ; rdfs:domain iaos:SoftwareMention ; rdfs:range xsd:string .
+iaos:extractionMethod a owl:DatatypeProperty ; rdfs:domain iaos:SoftwareMention ; rdfs:range xsd:string .
+
+# N-ary attributes — Affiliation
+iaos:startDate    a owl:DatatypeProperty ; rdfs:domain iaos:Affiliation ; rdfs:range xsd:date .
+iaos:endDate      a owl:DatatypeProperty ; rdfs:domain iaos:Affiliation ; rdfs:range xsd:date .
+iaos:role         a owl:DatatypeProperty ; rdfs:domain iaos:Affiliation ; rdfs:range xsd:string .
+
+# N-ary attributes — TopicAssignment
+iaos:probability  a owl:DatatypeProperty ; rdfs:domain iaos:TopicAssignment ; rdfs:range xsd:decimal .
+iaos:topicThreshold a owl:DatatypeProperty ; rdfs:domain iaos:TopicAssignment ; rdfs:range xsd:decimal .
+iaos:topicModel   a owl:DatatypeProperty ; rdfs:domain iaos:TopicAssignment ; rdfs:range xsd:string .
+
+# N-ary attributes — SimilarityRelation
+iaos:score        a owl:DatatypeProperty ; rdfs:domain iaos:SimilarityRelation ; rdfs:range xsd:decimal .
+iaos:similarityThreshold a owl:DatatypeProperty ; rdfs:domain iaos:SimilarityRelation ; rdfs:range xsd:decimal .
+iaos:similarityMethod a owl:DatatypeProperty ; rdfs:domain iaos:SimilarityRelation ; rdfs:range xsd:string .

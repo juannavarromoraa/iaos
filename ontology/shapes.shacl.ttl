@@ -1,0 +1,130 @@
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix iaos:  <https://w3id.org/iaos/ontology#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+#######################################################################
+#  SHACL shapes for IAOS ontology
+#  Validates that the KG conforms to the n-ary patterns introduced
+#  to address the feedback (thresholds, temporal affiliation, ROR).
+#######################################################################
+
+iaos:PaperShape a sh:NodeShape ;
+    sh:targetClass iaos:Paper ;
+    sh:property [
+        sh:path iaos:doi ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Every Paper MUST have exactly one DOI." ;
+    ] ;
+    sh:property [
+        sh:path iaos:title ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path iaos:year ;
+        sh:maxCount 1 ;
+    ] .
+
+iaos:OrganizationShape a sh:NodeShape ;
+    sh:targetClass iaos:Organization ;
+    sh:property [
+        sh:path iaos:rorId ;
+        sh:datatype xsd:anyURI ;
+        sh:maxCount 1 ;
+        sh:pattern "^https://ror\\.org/[0-9a-z]{9}$" ;
+        sh:severity sh:Warning ;
+        sh:message "Organization SHOULD have a valid ROR URI (https://ror.org/<9 chars>). Acceptable to miss it for entities discovered via NER pending entity-linking." ;
+    ] ;
+    sh:property [
+        sh:path iaos:name ;
+        sh:minCount 1 ;
+    ] .
+
+iaos:AffiliationShape a sh:NodeShape ;
+    sh:targetClass iaos:Affiliation ;
+    sh:property [
+        sh:path iaos:atOrganization ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class iaos:Organization ;
+        sh:message "Each Affiliation MUST link to exactly one Organization." ;
+    ] ;
+    sh:property [
+        sh:path iaos:startDate ;
+        sh:datatype xsd:date ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path iaos:endDate ;
+        sh:datatype xsd:date ;
+        sh:maxCount 1 ;
+    ] .
+
+iaos:TopicAssignmentShape a sh:NodeShape ;
+    sh:targetClass iaos:TopicAssignment ;
+    sh:property [
+        sh:path iaos:aboutTopic ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class iaos:Topic ;
+    ] ;
+    sh:property [
+        sh:path iaos:probability ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0.0 ;
+        sh:maxInclusive 1.0 ;
+        sh:minCount 1 ;
+        sh:message "probability MUST be in [0,1]." ;
+    ] ;
+    sh:property [
+        sh:path iaos:topicThreshold ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0.0 ;
+        sh:maxInclusive 1.0 ;
+        sh:minCount 1 ;
+        sh:message "topicThreshold is mandatory (per feedback) and MUST be in [0,1]." ;
+    ] .
+
+iaos:SimilarityRelationShape a sh:NodeShape ;
+    sh:targetClass iaos:SimilarityRelation ;
+    sh:property [
+        sh:path iaos:paper1 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class iaos:Paper ;
+    ] ;
+    sh:property [
+        sh:path iaos:paper2 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:class iaos:Paper ;
+    ] ;
+    sh:property [
+        sh:path iaos:score ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive -1.0 ;
+        sh:maxInclusive  1.0 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path iaos:similarityThreshold ;
+        sh:minCount 1 ;
+        sh:message "similarityThreshold is mandatory (per feedback)." ;
+    ] ;
+    sh:property [
+        sh:path iaos:similarityMethod ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+    ] .
+
+iaos:SoftwareMentionShape a sh:NodeShape ;
+    sh:targetClass iaos:SoftwareMention ;
+    sh:property [
+        sh:path iaos:extractionMethod ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Every SoftwareMention MUST record its extractionMethod (e.g. 'Grobid+Softcite')." ;
+    ] .
