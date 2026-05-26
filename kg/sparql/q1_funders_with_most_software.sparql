@@ -1,0 +1,16 @@
+# Q1 — Which funders fund more software-producing papers?
+# Answers the use case: "¿Qué agencias financian más software alojado en GitHub?"
+PREFIX iaos: <https://w3id.org/iaos/ontology#>
+
+SELECT ?funderName ?rorId (COUNT(DISTINCT ?software) AS ?nSoftware)
+WHERE {
+    ?paper a iaos:Paper ;
+           iaos:describesSoftware ?software ;
+           iaos:fundedBy/iaos:providedBy ?funder .
+    ?funder iaos:name  ?funderName ;
+            iaos:rorId ?rorId .
+    OPTIONAL { ?software iaos:repoURL ?repo .
+               FILTER(CONTAINS(STR(?repo), "github.com")) }
+}
+GROUP BY ?funderName ?rorId
+ORDER BY DESC(?nSoftware)

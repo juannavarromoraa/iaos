@@ -1,0 +1,17 @@
+# Q3 — Pairs of similar papers, exposing the n-ary relation with its threshold.
+# Demonstrates the n-ary pattern.
+PREFIX iaos: <https://w3id.org/iaos/ontology#>
+
+SELECT ?title1 ?title2 ?score ?threshold ?method
+WHERE {
+    ?sim a iaos:SimilarityRelation ;
+         iaos:paper1 ?p1 ;
+         iaos:paper2 ?p2 ;
+         iaos:score ?score ;
+         iaos:similarityThreshold ?threshold ;
+         iaos:similarityMethod ?method .
+    ?p1 iaos:title ?title1 .
+    ?p2 iaos:title ?title2 .
+    FILTER (?score >= ?threshold)
+}
+ORDER BY DESC(?score)

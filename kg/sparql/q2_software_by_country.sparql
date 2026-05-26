@@ -1,0 +1,15 @@
+# Q2 — In which countries is the most-starred research software produced?
+PREFIX iaos: <https://w3id.org/iaos/ontology#>
+
+SELECT ?country (SUM(?stars) AS ?totalStars) (COUNT(?software) AS ?nSoftware)
+WHERE {
+    ?paper a iaos:Paper ;
+           iaos:describesSoftware ?software .
+    ?software iaos:stars ?stars .
+    # affiliation of any author of the paper at any time
+    ?person iaos:authorOf ?paper ;
+            iaos:hasAffiliation/iaos:atOrganization ?org .
+    ?org iaos:country ?country .
+}
+GROUP BY ?country
+ORDER BY DESC(?totalStars)

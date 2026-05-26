@@ -1,0 +1,89 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": { "@id": "https://w3id.org/ro/crate/1.1" },
+      "about":   { "@id": "./" }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "IAOS — Research Software Funding Knowledge Graph",
+      "description": "Knowledge Graph linking 30 research papers with their authors, organizations (ROR), funding projects, topics (BERTopic), pairwise similarity (cosine over sentence embeddings) and the software they describe (extracted with Grobid + ML/NER). Includes the ontology, SHACL shapes, the data-processing pipeline, a PROV trace of a sample run and SPARQL queries that answer the use case.",
+      "datePublished": "2026-05-25",
+      "license":  { "@id": "https://opensource.org/licenses/MIT" },
+      "creator":  { "@id": "https://example.org/grupo10" },
+      "hasPart": [
+        { "@id": "ontology/iaos.ttl" },
+        { "@id": "ontology/shapes.shacl.ttl" },
+        { "@id": "kg/kg.ttl" },
+        { "@id": "kg/prov.ttl" },
+        { "@id": "kg/sparql/" },
+        { "@id": "src/" },
+        { "@id": "diagrama.drawio" },
+        { "@id": "docs/EXPERIMENT_DESIGN.md" },
+        { "@id": "docs/WORKFLOW.md" },
+        { "@id": "docs/MODEL_JUSTIFICATIONS.md" },
+        { "@id": "AI_USE.md" },
+        { "@id": "README.md" }
+      ],
+      "mentions": [
+        { "@id": "#workflow"     },
+        { "@id": "#ontology"     },
+        { "@id": "#kg"           }
+      ]
+    },
+    {
+      "@id": "https://example.org/grupo10",
+      "@type": "Organization",
+      "name": "Grupo 10 — IA y Open Science 2026 (UPM)"
+    },
+    {
+      "@id": "#workflow",
+      "@type": ["ComputationalWorkflow", "SoftwareSourceCode"],
+      "name": "IAOS pipeline",
+      "programmingLanguage": "Python",
+      "input": [
+        { "@id": "data/papers_corpus.csv" }
+      ],
+      "output": [
+        { "@id": "kg/kg.ttl" },
+        { "@id": "kg/prov.ttl" }
+      ]
+    },
+    {
+      "@id": "#ontology",
+      "@type": "Dataset",
+      "name": "IAOS ontology (Turtle)",
+      "encodingFormat": "text/turtle",
+      "hasPart": [
+        { "@id": "ontology/iaos.ttl" },
+        { "@id": "ontology/shapes.shacl.ttl" }
+      ]
+    },
+    {
+      "@id": "#kg",
+      "@type": "Dataset",
+      "name": "Final RDF Knowledge Graph",
+      "encodingFormat": "text/turtle",
+      "hasPart": [
+        { "@id": "kg/kg.ttl" }
+      ]
+    },
+    { "@id": "ontology/iaos.ttl",        "@type": "File", "encodingFormat": "text/turtle" },
+    { "@id": "ontology/shapes.shacl.ttl","@type": "File", "encodingFormat": "text/turtle" },
+    { "@id": "kg/kg.ttl",                "@type": "File", "encodingFormat": "text/turtle" },
+    { "@id": "kg/prov.ttl",              "@type": "File", "encodingFormat": "text/turtle" },
+    { "@id": "kg/sparql/",               "@type": "Dataset", "name": "SPARQL queries" },
+    { "@id": "src/",                     "@type": "Dataset", "name": "Pipeline source code" },
+    { "@id": "diagrama.drawio",          "@type": "File", "encodingFormat": "application/xml" },
+    { "@id": "docs/EXPERIMENT_DESIGN.md","@type": "File", "encodingFormat": "text/markdown" },
+    { "@id": "docs/WORKFLOW.md",         "@type": "File", "encodingFormat": "text/markdown" },
+    { "@id": "docs/MODEL_JUSTIFICATIONS.md","@type":"File","encodingFormat":"text/markdown" },
+    { "@id": "AI_USE.md",                "@type": "File", "encodingFormat": "text/markdown" },
+    { "@id": "README.md",                "@type": "File", "encodingFormat": "text/markdown" },
+    { "@id": "data/papers_corpus.csv",   "@type": "File", "encodingFormat": "text/csv" }
+  ]
+}

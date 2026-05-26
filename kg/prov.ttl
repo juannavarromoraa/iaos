@@ -1,0 +1,122 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix prv:   <https://w3id.org/iaos/prov/> .
+
+# ============================================================
+# Sample PROV trace — single execution of the IAOS pipeline.
+# Mirrors what src/08_prov.py emits on a real run.
+# ============================================================
+
+# --- Agents ---------------------------------------------------------------
+<https://w3id.org/iaos/resource/agent/grupo10> a prov:Agent, prov:Organization ;
+    rdfs:label "Grupo 10 — IAOS 2026" .
+
+<https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> a prov:SoftwareAgent ;
+    rdfs:label "IAOS pipeline v1.0.0 (Python)" ;
+    prov:actedOnBehalfOf <https://w3id.org/iaos/resource/agent/grupo10> .
+
+# --- Input entity ---------------------------------------------------------
+<https://w3id.org/iaos/resource/entity/papers_corpus.csv> a prov:Entity ;
+    rdfs:label "papers_corpus.csv (30 DOIs)" ;
+    prov:atLocation "data/papers_corpus.csv" .
+
+# --- Activity 1: fetch_metadata -------------------------------------------
+<https://w3id.org/iaos/resource/activity/fetch_metadata> a prov:Activity ;
+    rdfs:label "fetch_metadata" ;
+    prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> ;
+    prov:startedAtTime "2026-05-25T10:00:00Z"^^xsd:dateTime ;
+    prov:endedAtTime   "2026-05-25T10:01:12Z"^^xsd:dateTime ;
+    prov:used          <https://w3id.org/iaos/resource/entity/papers_corpus.csv> ,
+                       <https://w3id.org/iaos/resource/entity/01_fetch_metadata.py> .
+
+<https://w3id.org/iaos/resource/entity/openalex.json> a prov:Entity ;
+    rdfs:label "openalex.json (30 Work objects)" ;
+    prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/fetch_metadata> ;
+    prov:wasDerivedFrom <https://w3id.org/iaos/resource/entity/papers_corpus.csv> ;
+    prv:sha1 "abc123def456..." .
+
+# --- Activity 2: extract_software -----------------------------------------
+<https://w3id.org/iaos/resource/activity/extract_software> a prov:Activity ;
+    rdfs:label "extract_software (Grobid + ML/NER)" ;
+    prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> ;
+    prov:used <https://w3id.org/iaos/resource/entity/02_extract_software.py> ;
+    prov:startedAtTime "2026-05-25T10:01:30Z"^^xsd:dateTime ;
+    prov:endedAtTime   "2026-05-25T10:14:00Z"^^xsd:dateTime .
+
+<https://w3id.org/iaos/resource/entity/software_mentions.json> a prov:Entity ;
+    prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/extract_software> .
+
+# --- Activity 3: enrich_orgs_ror ------------------------------------------
+<https://w3id.org/iaos/resource/activity/enrich_orgs_ror> a prov:Activity ;
+    rdfs:label "enrich_orgs_ror" ;
+    prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> ;
+    prov:used <https://w3id.org/iaos/resource/entity/openalex.json> ,
+              <https://w3id.org/iaos/resource/entity/03_enrich_orgs_ror.py> .
+
+<https://w3id.org/iaos/resource/entity/ror.json> a prov:Entity ;
+    prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/enrich_orgs_ror> ;
+    prov:wasDerivedFrom <https://w3id.org/iaos/resource/entity/openalex.json> .
+
+# --- Activity 4: topic_modeling -------------------------------------------
+<https://w3id.org/iaos/resource/activity/topic_modeling> a prov:Activity ;
+    rdfs:label "topic_modeling (BERTopic, threshold=0.30)" ;
+    prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> ;
+    prov:used <https://w3id.org/iaos/resource/entity/openalex.json> ,
+              <https://w3id.org/iaos/resource/entity/04_topic_modeling.py> .
+
+<https://w3id.org/iaos/resource/entity/topics.json> a prov:Entity ;
+    prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/topic_modeling> ;
+    prov:wasDerivedFrom <https://w3id.org/iaos/resource/entity/openalex.json> .
+
+# --- Activity 5: similarity -----------------------------------------------
+<https://w3id.org/iaos/resource/activity/similarity> a prov:Activity ;
+    rdfs:label "similarity (cosine over MiniLM, threshold=0.70)" ;
+    prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> ;
+    prov:used <https://w3id.org/iaos/resource/entity/openalex.json> ,
+              <https://w3id.org/iaos/resource/entity/05_similarity.py> .
+
+<https://w3id.org/iaos/resource/entity/similarity.json> a prov:Entity ;
+    prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/similarity> ;
+    prov:wasDerivedFrom <https://w3id.org/iaos/resource/entity/openalex.json> .
+
+# --- Activity 6: NER ------------------------------------------------------
+<https://w3id.org/iaos/resource/activity/ner_acknowledgements> a prov:Activity ;
+    rdfs:label "ner_acknowledgements (roberta-large-ner-english, score>=0.85)" ;
+    prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> ;
+    prov:used <https://w3id.org/iaos/resource/entity/06_ner_acknowledgements.py> .
+
+<https://w3id.org/iaos/resource/entity/ner.json> a prov:Entity ;
+    prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/ner_acknowledgements> .
+
+# --- Activity 7: build_kg -------------------------------------------------
+<https://w3id.org/iaos/resource/activity/build_kg> a prov:Activity ;
+    rdfs:label "build_kg (rdflib, n-ary patterns)" ;
+    prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> ;
+    prov:used <https://w3id.org/iaos/resource/entity/openalex.json> ,
+              <https://w3id.org/iaos/resource/entity/ror.json> ,
+              <https://w3id.org/iaos/resource/entity/topics.json> ,
+              <https://w3id.org/iaos/resource/entity/similarity.json> ,
+              <https://w3id.org/iaos/resource/entity/software_mentions.json> ,
+              <https://w3id.org/iaos/resource/entity/ner.json> ,
+              <https://w3id.org/iaos/resource/entity/07_build_kg.py> .
+
+<https://w3id.org/iaos/resource/entity/kg.ttl> a prov:Entity ;
+    rdfs:label "kg.ttl — the final RDF Knowledge Graph" ;
+    prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/build_kg> ;
+    prov:wasDerivedFrom <https://w3id.org/iaos/resource/entity/openalex.json> ,
+                        <https://w3id.org/iaos/resource/entity/ror.json> ,
+                        <https://w3id.org/iaos/resource/entity/topics.json> ,
+                        <https://w3id.org/iaos/resource/entity/similarity.json> ,
+                        <https://w3id.org/iaos/resource/entity/software_mentions.json> ,
+                        <https://w3id.org/iaos/resource/entity/ner.json> .
+
+# --- Configuration recorded as Plan ---------------------------------------
+<https://w3id.org/iaos/resource/entity/config> a prov:Entity, prov:Plan ;
+    rdfs:label "Pipeline configuration & runtime" ;
+    prv:python   "3.11.7" ;
+    prv:embedModel  "sentence-transformers/all-MiniLM-L6-v2" ;
+    prv:nerModel    "Jean-Baptiste/roberta-large-ner-english" ;
+    prv:topicProbThreshold "0.30" ;
+    prv:similarityThreshold "0.70" ;
+    prv:nerScoreThreshold   "0.85" .
