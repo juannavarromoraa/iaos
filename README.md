@@ -1,5 +1,7 @@
 # IAOS Research Software Knowledge Graph
-<img width="191" height="20" alt="image" src="https://github.com/user-attachments/assets/5aa8abe7-1c83-4453-b2b3-cd1c1b6dbbae" />
+ DOI: 10.5281/zenodo.20403069
+ <img width="191" height="20" alt="image" src="https://github.com/user-attachments/assets/fd7904d9-8313-41ae-84c1-44e5d2c1f4ff" />
+
 
 
 ## 1. ¿Qué hay aquí?
