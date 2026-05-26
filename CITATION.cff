@@ -9,9 +9,11 @@ authors:
   - family-names: "Navarro Mora"
     given-names: "Juan"
     affiliation: "Universidad Politécnica de Madrid"
-  # TODO: add the rest of Grupo 10 members
-  - family-names: "Apellidos"
-    given-names: "Nombre"
+  - family-names: "de Diego Borbore"
+    given-names: "Juan"
+    affiliation: "Universidad Politécnica de Madrid"
+  - family-names: "Mobasser Aslfakouri"
+    given-names: "Tania"
     affiliation: "Universidad Politécnica de Madrid"
 keywords:
   - knowledge graph
