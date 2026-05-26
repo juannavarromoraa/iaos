@@ -1,9 +1,9 @@
 # IAOS — Research Software Funding Knowledge Graph
 
-> Knowledge Graph que conecta artículos científicos con sus autores,
-> organizaciones (ROR), agencias financiadoras, topics y el software que
-> describen, extraído del propio PDF. **Entregable 2** de la asignatura
-> *IA y Open Science 2026* (UPM). **Grupo 10.**
+ Knowledge Graph que conecta artículos científicos con sus autores,
+ organizaciones (ROR), agencias financiadoras, topics y el software que
+ describen, extraído del propio PDF. **Entregable 2** de la asignatura
+ *IA y Open Science 2026* (UPM).
 
 ---
 
@@ -17,8 +17,8 @@ iaos/
 │   └── shapes.shacl.ttl         # Restricciones SHACL
 ├── src/                         # Pipeline (10 scripts numerados)
 ├── data/
-│   ├── papers_corpus.csv        # ⚠️ 30 DOIs (rellenar)
-│   ├── pdfs/                    # ⚠️ 30 PDFs (descargar)
+│   ├── papers_corpus.csv        # 30 DOIs (rellenar)
+│   ├── pdfs/                    # 30 PDFs (descargar)
 │   ├── metadata/                # → openalex.json
 │   ├── raw/                     # → topics/sim/ner/software
 │   └── sample_run/              # KG sintético de demo
@@ -160,9 +160,7 @@ Una vez hecho:
 
 ## 9. Declaración de uso de IA
 
-> *"AI use declaration is mandatory"* — enunciado del Entregable 2, sesión 9, slide 56.
-
-El Grupo 10 ha utilizado herramientas de IA durante la realización de este trabajo. A continuación describimos **qué se usó, para qué y cómo**.
+El Grupo 10 ha utilizado herramientas de IA durante la realización de este trabajo.
 
 ### 9.1. Herramientas usadas
 
