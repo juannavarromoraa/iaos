@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "IAOS — Research Software Funding Knowledge Graph"
+message: "If you use this software or KG, please cite as follows."
+version: 1.0.0
+date-released: 2026-05-25
+license: MIT
+repository-code: "https://github.com/juannavarromoraa/iaos"
+authors:
+  - family-names: "Navarro Mora"
+    given-names: "Juan"
+    affiliation: "Universidad Politécnica de Madrid"
+  # TODO: add the rest of Grupo 10 members
+  - family-names: "Apellidos"
+    given-names: "Nombre"
+    affiliation: "Universidad Politécnica de Madrid"
+keywords:
+  - knowledge graph
+  - research software
+  - ROR
+  - OpenAlex
+  - topic modeling
+  - PROV
+  - RO-Crate
