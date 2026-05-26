@@ -1,0 +1,20 @@
+# Entornos virtuales de Python
+venv/
+env/
+.env
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Datos pesados que NO deben subir a GitHub (los PDFs reales)
+iaos/data/pdfs/*.pdf
+
+# Archivos basura del sistema operativo (especialmente si usas Mac)
+.DS_Store
+Thumbs.db
+
+# Configuración de editores (VS Code, PyCharm)
+.vscode/
+.idea/

@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+
+  # ----- GROBID for PDF parsing & TEI XML ----------------------------------
+  grobid:
+    image: lfoppiano/grobid:0.8.0
+    ports:
+      - "8070:8070"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8070/api/isalive"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ----- Pipeline (runs the Python scripts) --------------------------------
+  iaos-pipeline:
+    build: .
+    depends_on:
+      - grobid
+      - fuseki
+    environment:
+      - GROBID_URL=http://grobid:8070
+    volumes:
+      - ./data:/app/data
+      - ./kg:/app/kg
+      - ./ro-crate:/app/ro-crate
+    # use: docker compose run --rm iaos-pipeline python src/01_fetch_metadata.py
+    command: ["bash"]
+
+  # ----- Apache Jena Fuseki triplestore + SPARQL endpoint ------------------
+  fuseki:
+    image: stain/jena-fuseki:latest
+    environment:
+      - ADMIN_PASSWORD=admin
+      - FUSEKI_DATASET_1=iaos
+    ports:
+      - "3030:3030"
+    volumes:
+      - fuseki-data:/fuseki
+
+volumes:
+  fuseki-data:
