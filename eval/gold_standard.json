@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "description": "Manually annotated gold standard for the NER step on Acknowledgements. Each entry corresponds to one paper. Annotation guidelines: see eval/ANNOTATION_GUIDELINES.md.",
+    "annotators": ["Grupo10-A", "Grupo10-B"],
+    "ner_tags": ["PER", "ORG", "GRANT"],
+    "tutorial_note": "Replace the entries below with the actual 30 papers from data/papers_corpus.csv. We provide 3 examples so the format is clear."
+  },
+  "entries": [
+    {
+      "doi_slug": "10-1093-bioinformatics-btaa001",
+      "doi": "10.1093/bioinformatics/btaa001",
+      "acknowledgements_text": "This work was supported by the European Commission under Horizon 2020 (grant 831558, FAIRsFAIR). We thank Daniel Garijo and María Poveda for their feedback.",
+      "gold_entities": {
+        "PER": ["Daniel Garijo", "María Poveda"],
+        "ORG": ["European Commission"],
+        "GRANT": ["831558"]
+      }
+    },
+    {
+      "doi_slug": "10-1093-bioinformatics-btaa002",
+      "doi": "10.1093/bioinformatics/btaa002",
+      "acknowledgements_text": "This research was partially funded by the NIH through grant R01AG059874 and by the Spanish Ministry of Science under grant PID2020-1234-X.",
+      "gold_entities": {
+        "PER": [],
+        "ORG": ["NIH", "Spanish Ministry of Science"],
+        "GRANT": ["R01AG059874", "PID2020-1234-X"]
+      }
+    },
+    {
+      "doi_slug": "10-5281-zenodo-999",
+      "doi": "10.5281/zenodo.999",
+      "acknowledgements_text": "We thank Kelly Cobourn for sharing data and the US Office of Naval Research for funding.",
+      "gold_entities": {
+        "PER": ["Kelly Cobourn"],
+        "ORG": ["US Office of Naval Research"],
+        "GRANT": []
+      }
+    }
+  ]
+}
