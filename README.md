@@ -9,6 +9,7 @@
 
 ## 1. ¿Qué hay aquí?
 
+```
 iaos/
 ├── diagrama.drawio              # Modelo de la ontología (corregido)
 ├── ontology/
@@ -40,7 +41,7 @@ iaos/
 ├── codemeta.json
 ├── LICENSE                      # MIT
 └── README.md                    # este archivo
-
+```
 ## 2. Caso de uso
 
 Mapear cómo la **financiación científica** influye en la creación de
@@ -58,14 +59,19 @@ Las respuestas se obtienen ejecutando las queries SPARQL de `kg/sparql/`.
 ### Opción A — con Docker (recomendado, reproducible)
 
 # 1) Levantar Grobid y Fuseki
+```
 docker compose up -d grobid fuseki
+```
 
 # 2) Construir imagen del pipeline
+```
 docker compose build iaos-pipeline
+```
 
 # 3) Rellenar el corpus en data/papers_corpus.csv y descargar PDFs a data/pdfs/
 
 # 4) Ejecutar todos los pasos
+```
 docker compose run --rm iaos-pipeline python src/01_fetch_metadata.py
 docker compose run --rm iaos-pipeline python src/02_extract_software.py
 docker compose run --rm iaos-pipeline python src/03_enrich_orgs_ror.py
@@ -76,31 +82,41 @@ docker compose run --rm iaos-pipeline python src/07_build_kg.py
 docker compose run --rm iaos-pipeline python src/08_prov.py
 docker compose run --rm iaos-pipeline python src/09_validate_shacl.py
 docker compose run --rm iaos-pipeline python src/10_make_ro_crate.py
-
+```
 # 5) Subir el KG al endpoint SPARQL
+```
 curl -X POST -H "Content-Type: text/turtle" --data-binary @kg/kg.ttl \
      "http://localhost:3030/iaos/data?graph=https://w3id.org/iaos/kg"
+```
 
 # 6) Consultar
+```
 curl -X POST "http://localhost:3030/iaos/query" \
      -H "Content-Type: application/sparql-query" \
      --data-binary @kg/sparql/q1_funders_with_most_software.sparql
+```
 
 ### Opción B — entorno local
+```
 
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+```
 # (Grobid se necesita en localhost:8070; usa el contenedor del compose)
+```
 python src/01_fetch_metadata.py
+```
 # … etc
 
 ## 4. Demo rápida sin tu corpus
 
 # regenerar el KG sintético + queries
+```
 python data/sample_run/gen_sample_kg.py
 python -c "from rdflib import Graph; \
   g=Graph().parse('kg/kg_sample.ttl'); \
   print(g.query(open('kg/sparql/q5_author_affiliation_history.sparql').read()).serialize(format='txt').decode())"
+```
 
 ## 5. Decisiones de modelado
 
