@@ -1,31 +1,31 @@
 doi,notes
-10.1162/qss_a_00114,Linking Global Science Funding to Research Publications (Metascience)
+10.1162/qss_a_00114,Linking Global Science Funding to Research Publications
+10.1038/sdata.2016.18,The FAIR guiding principles for scientific data management and stewardship
 10.1038/s41597-022-01141-w,FAIR Principles for Research Software (FAIR4RS)
-10.12688/f1000research.23224.2,Sustainable research software for computational research
-10.12688/openreseurope.13362.1,Sustainable astronomical data infrastructure
-10.1109/eScience.2021.00024,SMECS: Software Metadata Extraction
-10.7717/peerj-cs.142,Four recommendations for open source software
-10.1371/journal.pcbi.1006561,Ten simple rules for making research software more robust
-10.1038/s41597-020-0486-7,The FAIR guiding principles for scientific data management
-10.1145/3332186.3333053,The impact of software in science and engineering
-10.1002/spe.2753,Research Software Engineering: A new profession
-10.1109/MCSE.2017.3421560,Software and skills for computational science
-10.5334/jors.274,The role of Research Software Engineers
-10.1371/journal.pone.0246604,A survey of researchers' code sharing
-10.1109/MCSE.2019.2932906,Recognizing the value of software
-10.1038/s41559-017-0160,Trouble at the lab: code rot and sustainability
-10.7717/peerj-cs.872,Software citation in theory and practice
-10.1016/j.joi.2020.101115,Mining software entities in scientific literature
+10.12688/f1000research.23224.2,Sustainable research software for high-quality computational research
+10.12688/openreseurope.13362.1,Towards a sustainable astronomical data infrastructure
+10.12688/f1000research.11407.1,Four simple recommendations to encourage best practices in research software
+10.1371/journal.pcbi.1005412,Ten simple rules for making research software more robust
+10.1109/MCSE.2017.3421560,The impact of software in science and engineering
+10.1109/MCSE.2015.111,Research Software Engineering: A new profession
+10.12688/f1000research.26932.2,Recognizing the value of software: a software citation guide
+10.1038/nbt.2858,Trouble at the lab: code rot and sustainability
+10.7717/peerj-cs.86,Software citation in theory and practice
 10.1162/dint_a_00177,Making FAIR software a reality
 10.1038/d41586-022-01659-0,The fight to keep scientific software alive
-10.1109/MS.2022.3174150,Software Sustainability: A Systematic Literature Review
-10.1371/journal.pone.0213013,An empirical study of open source software ecosystems
+10.1109/TSE.2021.3129486,Software Sustainability: A Systematic Literature Review
+10.1007/s10664-019-09756-x,An empirical study of open source software ecosystems
 10.1186/s13321-020-00428-5,Open science and open software in cheminformatics
 10.1093/bib/bbab129,Best practices for developing bioinformatics software
-10.1145/3461001.3471157,Challenges in research software sustainability
-10.5334/dsj-2021-016,Open science policies and software
-10.1186/s13029-021-00130-w,The impact of open source on reproducible research
-10.1109/eScience.2022.00012,Metrics for research software sustainability
-10.1162/qss_a_00136,Analyzing the software landscape in academic literature
-10.1145/3597503.3623325,Funding models for open source infrastructure
+10.1145/3597503.3623325,Metrics for research software sustainability
 10.1007/s00799-021-00305-y,Knowledge graphs for research software
+10.1371/journal.pcbi.1005510,Good enough practices in scientific computing
+10.1038/s41592-020-0763-7,Reproducibility of computational workflows is automated
+10.1629/uksg.467,A register of core research organizations (ROR)
+10.1007/978-3-319-46523-4_51,Scholarly Data: A knowledge graph for scientific conferences
+10.1038/s41597-023-02146-1,OpenAIRE Graph: A comprehensive open science knowledge graph
+10.1145/3487553.3524213,Identifying and linking software entities in scholarly papers
+10.1109/TSE.2022.3168864,Named Entity Recognition for Software Engineering
+10.1016/j.eswa.2023.120687,Topic modeling of scientific literature: A systematic review
+10.18653/v1/D19-1410,Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks
+10.48550/arXiv.2203.05794,BERTopic: Neural topic modeling with a class-based TF-IDF procedure
