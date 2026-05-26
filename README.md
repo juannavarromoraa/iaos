@@ -2,8 +2,7 @@
 
  Knowledge Graph que conecta artículos científicos con sus autores,
  organizaciones (ROR), agencias financiadoras, topics y el software que
- describen, extraído del propio PDF. **Entregable 2** de la asignatura
- *IA y Open Science 2026* (UPM).
+ describen, extraído del propio PDF.
 
 ---
 
