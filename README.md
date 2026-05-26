@@ -1,10 +1,4 @@
-# IAOS — Research Software Funding Knowledge Graph
-
- Knowledge Graph que conecta artículos científicos con sus autores,
- organizaciones (ROR), agencias financiadoras, topics y el software que
- describen, extraído del propio PDF.
-
----
+# IAOS Research Software Knowledge Graph
 
 ## 1. ¿Qué hay aquí?
 
