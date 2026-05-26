@@ -21,54 +21,54 @@
     prov:atLocation "kg/kg.ttl" ;
     prov:wasDerivedFrom <https://w3id.org/iaos/resource/entity/ner.json> ;
     prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/build_kg> ;
-    prv:sha1 "ae444d7c97571712bef2c54b501cf12452cf9a04" .
+    prv:sha1 "5e1d22b5a71e87352344d752e729e40ad14ac703" .
 
 <https://w3id.org/iaos/resource/activity/build_kg> a prov:Activity ;
     rdfs:label "build_kg" ;
     prov:qualifiedAssociation <https://w3id.org/iaos/resource/plan/build_kg> ;
-    prov:startedAtTime "2026-05-26T16:02:01+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-05-26T17:15:01+00:00"^^xsd:dateTime ;
     prov:used <https://w3id.org/iaos/resource/entity/07_build_kg.py> ;
     prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> .
 
 <https://w3id.org/iaos/resource/activity/enrich_orgs_ror> a prov:Activity ;
     rdfs:label "enrich_orgs_ror" ;
     prov:qualifiedAssociation <https://w3id.org/iaos/resource/plan/enrich_orgs_ror> ;
-    prov:startedAtTime "2026-05-26T16:02:01+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-05-26T17:15:01+00:00"^^xsd:dateTime ;
     prov:used <https://w3id.org/iaos/resource/entity/03_enrich_orgs_ror.py> ;
     prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> .
 
 <https://w3id.org/iaos/resource/activity/extract_software> a prov:Activity ;
     rdfs:label "extract_software" ;
     prov:qualifiedAssociation <https://w3id.org/iaos/resource/plan/extract_software> ;
-    prov:startedAtTime "2026-05-26T16:02:01+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-05-26T17:15:01+00:00"^^xsd:dateTime ;
     prov:used <https://w3id.org/iaos/resource/entity/02_extract_software.py> ;
     prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> .
 
 <https://w3id.org/iaos/resource/activity/fetch_metadata> a prov:Activity ;
     rdfs:label "fetch_metadata" ;
     prov:qualifiedAssociation <https://w3id.org/iaos/resource/plan/fetch_metadata> ;
-    prov:startedAtTime "2026-05-26T16:02:01+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-05-26T17:15:01+00:00"^^xsd:dateTime ;
     prov:used <https://w3id.org/iaos/resource/entity/01_fetch_metadata.py> ;
     prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> .
 
 <https://w3id.org/iaos/resource/activity/ner_acknowledgements> a prov:Activity ;
     rdfs:label "ner_acknowledgements" ;
     prov:qualifiedAssociation <https://w3id.org/iaos/resource/plan/ner_acknowledgements> ;
-    prov:startedAtTime "2026-05-26T16:02:01+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-05-26T17:15:01+00:00"^^xsd:dateTime ;
     prov:used <https://w3id.org/iaos/resource/entity/06_ner_acknowledgements.py> ;
     prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> .
 
 <https://w3id.org/iaos/resource/activity/similarity> a prov:Activity ;
     rdfs:label "similarity" ;
     prov:qualifiedAssociation <https://w3id.org/iaos/resource/plan/similarity> ;
-    prov:startedAtTime "2026-05-26T16:02:01+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-05-26T17:15:01+00:00"^^xsd:dateTime ;
     prov:used <https://w3id.org/iaos/resource/entity/05_similarity.py> ;
     prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> .
 
 <https://w3id.org/iaos/resource/activity/topic_modeling> a prov:Activity ;
     rdfs:label "topic_modeling" ;
     prov:qualifiedAssociation <https://w3id.org/iaos/resource/plan/topic_modeling> ;
-    prov:startedAtTime "2026-05-26T16:02:01+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-05-26T17:15:01+00:00"^^xsd:dateTime ;
     prov:used <https://w3id.org/iaos/resource/entity/04_topic_modeling.py> ;
     prov:wasAssociatedWith <https://w3id.org/iaos/resource/agent/iaos-pipeline-v1> .
 
@@ -114,21 +114,21 @@
     rdfs:label "openalex.json" ;
     prov:atLocation "metadata/openalex.json" ;
     prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/fetch_metadata> ;
-    prv:sha1 "b7d82699e1fe6e3eed52db232522581f6ab7be3d" .
+    prv:sha1 "f446b7b8f55a746013a8f5128b015e64dbbe129d" .
 
 <https://w3id.org/iaos/resource/entity/ror.json> a prov:Entity ;
     rdfs:label "ror.json" ;
     prov:atLocation "raw/ror.json" ;
     prov:wasDerivedFrom <https://w3id.org/iaos/resource/entity/software_mentions.json> ;
     prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/enrich_orgs_ror> ;
-    prv:sha1 "552ebfaf1e7d7732e390c6eb73b236d7643f096c" .
+    prv:sha1 "4b24b23927a5d74f997f82222b1eeba3f80d99c8" .
 
 <https://w3id.org/iaos/resource/entity/similarity.json> a prov:Entity ;
     rdfs:label "similarity.json" ;
     prov:atLocation "raw/similarity.json" ;
     prov:wasDerivedFrom <https://w3id.org/iaos/resource/entity/topics.json> ;
     prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/similarity> ;
-    prv:sha1 "348eef37fd7fd559f44c5dd1b223ee3e770b0697" .
+    prv:sha1 "5179c041fc22f26b6735d654848a58de9e82d25e" .
 
 <https://w3id.org/iaos/resource/entity/software_mentions.json> a prov:Entity ;
     rdfs:label "software_mentions.json" ;
@@ -142,7 +142,7 @@
     prov:atLocation "raw/topics.json" ;
     prov:wasDerivedFrom <https://w3id.org/iaos/resource/entity/ror.json> ;
     prov:wasGeneratedBy <https://w3id.org/iaos/resource/activity/topic_modeling> ;
-    prv:sha1 "f8c48bf92e5e55e39108fdde7efe844f2bd98137" .
+    prv:sha1 "5ff4fb9e1f6564bbe237e3c1eb76d9a51d1f44f8" .
 
 <https://w3id.org/iaos/resource/plan/build_kg> a prov:Plan ;
     rdfs:label "Plan for build_kg" .

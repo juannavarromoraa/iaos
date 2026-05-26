@@ -1,10 +1,31 @@
-doi,notes
-10.1038/sdata.2016.18,The FAIR guiding principles for scientific data management
-10.12688/f1000research.23224.2,Sustainable research software for computational research
-10.12688/f1000research.11407.1,Four simple recommendations to encourage best practices
-10.1371/journal.pcbi.1005412,Ten simple rules for making research software more robust
-10.12688/f1000research.26932.2,Recognizing the value of software citation
-10.1186/s13321-020-00428-5,Open science and open software in cheminformatics
-10.1007/s00799-021-00305-y,Knowledge graphs for research software
-10.1371/journal.pcbi.1005510,Good enough practices in scientific computing
-10.18653/v1/D19-1410,Sentence-BERT Sentence Embeddings
+doi,short_title,year,primary_country,primary_funder,github_repo,group
+10.1093/bioinformatics/btp352,SAMtools - Sequence Alignment Map format,2009,GB,Wellcome Trust,https://github.com/samtools/samtools,A_bioinformatics
+10.1093/bioinformatics/btp324,BWA - Burrows-Wheeler Aligner,2009,GB,Wellcome Trust,https://github.com/lh3/bwa,A_bioinformatics
+10.1093/bioinformatics/bts635,STAR - ultrafast universal RNA-seq aligner,2013,US,NIH,https://github.com/alexdobin/STAR,A_bioinformatics
+10.1093/bioinformatics/btu170,Trimmomatic flexible trimmer Illumina,2014,DE,BMBF DFG,https://github.com/usadellab/Trimmomatic,A_bioinformatics
+10.1093/bioinformatics/btt656,featureCounts - efficient general purpose program,2014,AU,NHMRC,https://github.com/ShiLab-Bioinformatics/subread,A_bioinformatics
+10.1186/s13059-014-0550-8,DESeq2 - moderated estimation RNA-seq,2014,US,NIH DFG,https://github.com/thelovelab/DESeq2,A_bioinformatics
+10.1093/bioinformatics/btu638,HTSeq - high-throughput sequencing data,2015,DE,EMBL,https://github.com/htseq/htseq,A_bioinformatics
+10.1093/bioinformatics/btw354,MultiQC - summarize analysis results,2016,SE,Swedish Research Council,https://github.com/MultiQC/MultiQC,A_bioinformatics
+10.1038/nmeth.4197,Salmon - fast bias-aware quantification,2017,US,NIH Sloan,https://github.com/COMBINE-lab/salmon,A_bioinformatics
+10.1186/s13059-017-1382-0,Scanpy - large-scale single-cell gene expression,2018,DE,Helmholtz DFG,https://github.com/scverse/scanpy,A_bioinformatics
+10.1093/bioinformatics/bty191,minimap2 - pairwise alignment for nucleotide,2018,US,NHGRI,https://github.com/lh3/minimap2,A_bioinformatics
+10.1186/s13059-019-1891-0,Kraken2 - taxonomic classification metagenomic,2019,US,NIH,https://github.com/DerrickWood/kraken2,A_bioinformatics
+10.1038/s41587-020-0439-x,nf-core framework community-curated pipelines,2020,SE,SciLifeLab,https://github.com/nf-core,A_bioinformatics
+10.1038/s41586-021-03819-2,AlphaFold - protein structure prediction,2021,GB,DeepMind Google,https://github.com/google-deepmind/alphafold,A_bioinformatics
+10.1038/nbt.3820,Nextflow reproducible computational workflows,2017,ES,EU H2020,https://github.com/nextflow-io/nextflow,B_workflows
+10.1093/bioinformatics/bts480,Snakemake scalable bioinformatics workflow,2012,DE,DFG,https://github.com/snakemake/snakemake,B_workflows
+10.1093/nar/gkac247,Galaxy platform 2022 update,2022,US,NIH EU H2020,https://github.com/galaxyproject/galaxy,B_workflows
+10.1093/gigascience/giz095,CWLProv - sharing interoperable workflow provenance,2019,GB,EU H2020 BioExcel,https://github.com/common-workflow-language,B_workflows
+10.1038/s41586-020-2649-2,Array programming with NumPy,2020,US,NSF NASA Sloan,https://github.com/numpy/numpy,C_scientific_computing
+10.1038/s41592-019-0686-2,SciPy 1.0 fundamental algorithms scientific computing,2020,US,Sloan NSF,https://github.com/scipy/scipy,C_scientific_computing
+10.48550/arXiv.2203.05794,BERTopic neural topic modeling,2022,NL,independent,https://github.com/MaartenGr/BERTopic,D_ml_nlp
+10.18653/v1/D19-1410,Sentence-BERT - sentence embeddings,2019,DE,DFG,https://github.com/UKPLab/sentence-transformers,D_ml_nlp
+10.18653/v1/2020.emnlp-demos.6,Transformers - state-of-the-art NLP HuggingFace,2020,US,Hugging Face,https://github.com/huggingface/transformers,D_ml_nlp
+10.1109/BigData47090.2019.9006447,SoMEF framework software metadata extraction,2019,ES,UPM USC,https://github.com/KnowledgeCaptureAndDiscovery/somef,E_software_metadata
+10.1162/qss_a_00167,Framework Knowledge Graphs of scientific software metadata,2021,ES,UPM USC,https://github.com/KnowledgeCaptureAndDiscovery/somef,E_software_metadata
+10.3233/DS-210053,Packaging research artefacts with RO-Crate,2022,GB,EU H2020 BioExcel,https://github.com/ResearchObject/ro-crate,E_software_metadata
+10.1145/3459637.3482017,SoMeSci - 5-star Knowledge Graph software mentions,2021,DE,University of Rostock,https://github.com/dave-s477/SoMeSci,E_software_metadata
+10.1002/asi.24454,Softcite dataset software mentions,2021,US,Sloan Foundation,https://github.com/howisonlab/softcite-dataset,E_software_metadata
+10.48550/arXiv.2209.00693,CZ Software Mentions large dataset biomedical,2022,US,Chan Zuckerberg Initiative,https://github.com/chanzuckerberg/software-mentions,E_software_metadata
+10.1093/bioinformatics/btae464,FAIRsoft - practical implementation FAIR research software,2024,ES,BSC ELIXIR,https://gitlab.bsc.es/inb/openebench/software-observatory,E_software_metadata

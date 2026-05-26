@@ -1,15 +1,57 @@
 [
   {
-    "paper1": "https://doi.org/10.12688/f1000research.23224.2",
-    "paper2": "https://doi.org/10.12688/f1000research.11407.1",
-    "score": 0.7603,
+    "paper1": "https://doi.org/10.1093/bioinformatics/btp324",
+    "paper2": "https://doi.org/10.1093/bioinformatics/bts635",
+    "score": 0.7312,
     "threshold": 0.7,
     "method": "cosine(all-MiniLM-L6-v2)"
   },
   {
-    "paper1": "https://doi.org/10.12688/f1000research.11407.1",
-    "paper2": "https://doi.org/10.12688/f1000research.26932.2",
-    "score": 0.72,
+    "paper1": "https://doi.org/10.1093/bioinformatics/btp324",
+    "paper2": "https://doi.org/10.1093/bioinformatics/bty191",
+    "score": 0.7604,
+    "threshold": 0.7,
+    "method": "cosine(all-MiniLM-L6-v2)"
+  },
+  {
+    "paper1": "https://doi.org/10.1093/bioinformatics/bts635",
+    "paper2": "https://doi.org/10.1093/bioinformatics/bty191",
+    "score": 0.7404,
+    "threshold": 0.7,
+    "method": "cosine(all-MiniLM-L6-v2)"
+  },
+  {
+    "paper1": "https://doi.org/10.1109/bigdata47090.2019.9006447",
+    "paper2": "https://doi.org/10.1162/qss_a_00167",
+    "score": 0.8736,
+    "threshold": 0.7,
+    "method": "cosine(all-MiniLM-L6-v2)"
+  },
+  {
+    "paper1": "https://doi.org/10.1109/bigdata47090.2019.9006447",
+    "paper2": "https://doi.org/10.1145/3459637.3482017",
+    "score": 0.7671,
+    "threshold": 0.7,
+    "method": "cosine(all-MiniLM-L6-v2)"
+  },
+  {
+    "paper1": "https://doi.org/10.1162/qss_a_00167",
+    "paper2": "https://doi.org/10.3233/ds-210053",
+    "score": 0.7275,
+    "threshold": 0.7,
+    "method": "cosine(all-MiniLM-L6-v2)"
+  },
+  {
+    "paper1": "https://doi.org/10.1162/qss_a_00167",
+    "paper2": "https://doi.org/10.1145/3459637.3482017",
+    "score": 0.7567,
+    "threshold": 0.7,
+    "method": "cosine(all-MiniLM-L6-v2)"
+  },
+  {
+    "paper1": "https://doi.org/10.1145/3459637.3482017",
+    "paper2": "https://doi.org/10.48550/arxiv.2209.00693",
+    "score": 0.7892,
     "threshold": 0.7,
     "method": "cosine(all-MiniLM-L6-v2)"
   }

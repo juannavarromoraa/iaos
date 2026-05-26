@@ -1,32 +1,22 @@
 {
-  "https://openalex.org/I4210162265": {
-    "id": "https://ror.org/04mfzb702",
-    "name": "Centre for Plant Biotechnology and Genomics",
+  "https://openalex.org/I103531236": {
+    "id": "https://ror.org/02n2fzt79",
+    "name": "Boston College",
     "via": "openalex"
   },
-  "https://openalex.org/I88060688": {
-    "id": "https://ror.org/03n6nwv02",
-    "name": "Universidad Politécnica de Madrid",
+  "https://openalex.org/I107606265": {
+    "id": "https://ror.org/05a0ya142",
+    "name": "Broad Institute",
     "via": "openalex"
   },
-  "https://openalex.org/I97018004": {
-    "id": "https://ror.org/00f54p054",
-    "name": "Stanford University",
+  "https://openalex.org/I161318765": {
+    "id": "https://ror.org/046rm7j60",
+    "name": "University of California, Los Angeles",
     "via": "openalex"
   },
-  "https://openalex.org/I1318003438": {
-    "id": "https://ror.org/02scfj030",
-    "name": "RELX Group (Netherlands)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I1280640908": {
-    "id": "https://ror.org/0563w1497",
-    "name": "The Nature Conservancy",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210108549": {
-    "id": "https://ror.org/01mrvqn21",
-    "name": "EuroQol Research Foundation",
+  "https://openalex.org/I2801577699": {
+    "id": "https://ror.org/049gn7z52",
+    "name": "Beijing Institute of Genomics",
     "via": "openalex"
   },
   "https://openalex.org/I2802476451": {
@@ -34,439 +24,29 @@
     "name": "Wellcome Sanger Institute",
     "via": "openalex"
   },
-  "https://openalex.org/I4210133293": {
-    "id": "https://ror.org/02vtk3a57",
-    "name": "Lygature",
+  "https://openalex.org/I2750212522": {
+    "id": "https://ror.org/02qz8b764",
+    "name": "Cold Spring Harbor Laboratory",
     "via": "openalex"
   },
-  "https://openalex.org/I4210152360": {
-    "id": "https://ror.org/048rwjb21",
-    "name": "Eindhoven Cancer Registry",
+  "https://openalex.org/I68554272": {
+    "id": "https://ror.org/00fcszb13",
+    "name": "Pacific Biosciences (United States)",
     "via": "openalex"
   },
-  "https://openalex.org/I865915315": {
-    "id": "https://ror.org/008xxew50",
-    "name": "Vrije Universiteit Amsterdam",
+  "https://openalex.org/I171892758": {
+    "id": "https://ror.org/02nv7yv05",
+    "name": "Forschungszentrum Jülich",
     "via": "openalex"
   },
-  "https://openalex.org/I1299303238": {
-    "id": "https://ror.org/01cwqze88",
-    "name": "National Institutes of Health",
+  "https://openalex.org/I4210105972": {
+    "id": "https://ror.org/01fbde567",
+    "name": "Max Planck Institute of Molecular Plant Physiology",
     "via": "openalex"
   },
-  "https://openalex.org/I4210091794": {
-    "id": "https://ror.org/00fj8a872",
-    "name": "Office of the Director",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210164629": {
-    "id": "https://ror.org/05a8epj20",
-    "name": "Pension Fund for Care and Well-Being",
-    "via": "openalex"
-  },
-  "https://openalex.org/I153648349": {
-    "id": "https://ror.org/04h699437",
-    "name": "University of Leicester",
-    "via": "openalex"
-  },
-  "https://openalex.org/I136199984": {
-    "id": "https://ror.org/03vek6s52",
-    "name": "Harvard University",
-    "via": "openalex"
-  },
-  "https://openalex.org/I2801851002": {
-    "id": "https://ror.org/006v7bf86",
-    "name": "Harvard University Press",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210089348": {
-    "id": "https://ror.org/008pnp284",
-    "name": "Data Archiving and Networked Services (DANS)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I100135526": {
-    "id": "https://ror.org/045pn2j94",
-    "name": "BGI Group (China)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I34352273": {
-    "id": "https://ror.org/02jz4aj89",
-    "name": "Maastricht University",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210090479": {
-    "id": "https://ror.org/00dztkz65",
-    "name": "Graduate School Experimental Plant Sciences",
-    "via": "openalex"
-  },
-  "https://openalex.org/I913481162": {
-    "id": "https://ror.org/04qw24q55",
-    "name": "Wageningen University & Research",
-    "via": "openalex"
-  },
-  "https://openalex.org/I40120149": {
-    "id": "https://ror.org/052gg0110",
-    "name": "University of Oxford",
-    "via": "openalex"
-  },
-  "https://openalex.org/I32062511": {
-    "id": "https://ror.org/04mghma93",
-    "name": "Heriot-Watt University",
-    "via": "openalex"
-  },
-  "https://openalex.org/I28407311": {
-    "id": "https://ror.org/027m9bs27",
-    "name": "University of Manchester",
-    "via": "openalex"
-  },
-  "https://openalex.org/I36258959": {
-    "id": "https://ror.org/0168r3w48",
-    "name": "University of California San Diego",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210160245": {
-    "id": "https://ror.org/05se6w266",
-    "name": "Dutch Institute for Healthcare Improvement",
-    "via": "openalex"
-  },
-  "https://openalex.org/I2800006345": {
-    "id": "https://ror.org/05xvt9f17",
-    "name": "Leiden University Medical Center",
-    "via": "openalex"
-  },
-  "https://openalex.org/I2802430469": {
-    "id": "https://ror.org/01024mn06",
-    "name": "Nederlandse Spoorwegen",
-    "via": "openalex"
-  },
-  "https://openalex.org/I121797337": {
-    "id": "https://ror.org/027bh9e22",
-    "name": "Leiden University",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210095242": {
-    "id": "https://ror.org/00rbjv475",
-    "name": "Netherlands eScience Center",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210117836": {
-    "id": "https://ror.org/03bc0qh53",
-    "name": "Space Micro (United States)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210133584": {
-    "id": "https://ror.org/030edbc02",
-    "name": "Clinical Research Consultants (United States)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210090944": {
-    "id": "https://ror.org/00bkgf580",
-    "name": "Fundação de Apoio à Universidade Federal de São Paulo",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210116822": {
-    "id": "https://ror.org/02ddkpn78",
-    "name": "Fundação de Amparo à Pesquisa do Estado de São Paulo",
-    "via": "openalex"
-  },
-  "https://openalex.org/I123387679": {
-    "id": "https://ror.org/048a87296",
-    "name": "Uppsala University",
-    "via": "openalex"
-  },
-  "https://openalex.org/I2800139495": {
-    "id": "https://ror.org/04ev03g22",
-    "name": "Science for Life Laboratory",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210092757": {
-    "id": "https://ror.org/00n6v1c97",
-    "name": "Bayer (Belgium)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I12708293": {
-    "id": "https://ror.org/002n09z45",
-    "name": "SIB Swiss Institute of Bioinformatics",
-    "via": "openalex"
-  },
-  "https://openalex.org/I1850255": {
-    "id": "https://ror.org/02s6k3f65",
-    "name": "University of Basel",
-    "via": "openalex"
-  },
-  "https://openalex.org/I31586040": {
-    "id": "https://ror.org/03k0cyw07",
-    "name": "Toray (United States)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I1334415907": {
-    "id": "https://ror.org/03cv38k47",
-    "name": "University Medical Center Groningen",
-    "via": "openalex"
-  },
-  "https://openalex.org/I169381384": {
-    "id": "https://ror.org/012p63287",
-    "name": "University of Groningen",
-    "via": "openalex"
-  },
-  "https://openalex.org/I2801952686": {
-    "id": "https://ror.org/018906e22",
-    "name": "Erasmus MC",
-    "via": "openalex"
-  },
-  "https://openalex.org/I913958620": {
-    "id": "https://ror.org/057w15z03",
-    "name": "Erasmus University Rotterdam",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210119540": {
-    "id": "https://ror.org/022v8s261",
-    "name": "Province of Antwerp",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210135156": {
-    "id": "https://ror.org/043vk3t22",
-    "name": "Terumo (Belgium)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210132734": {
-    "id": "https://ror.org/03e21z229",
-    "name": "Max Planck Computing and Data Facility",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210146410": {
-    "id": "https://ror.org/04j8yhy50",
-    "name": "Science Oxford",
-    "via": "openalex"
-  },
-  "https://openalex.org/I102335020": {
-    "id": "https://ror.org/04t3en479",
-    "name": "Karlsruhe Institute of Technology",
-    "via": "openalex"
-  },
-  "https://openalex.org/I75027704": {
-    "id": "https://ror.org/020f3ap87",
-    "name": "University of Tennessee at Knoxville",
-    "via": "openalex"
-  },
-  "https://openalex.org/I2898391981": {
-    "id": "https://ror.org/04bwf3e34",
-    "name": "Deutsches Zentrum für Luft- und Raumfahrt e. V. (DLR)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I39343248": {
-    "id": "https://ror.org/01hcx6992",
-    "name": "Humboldt-Universität zu Berlin",
-    "via": "openalex"
-  },
-  "https://openalex.org/I76198965": {
-    "id": "https://ror.org/05qpz1x62",
-    "name": "Friedrich Schiller University Jena",
-    "via": "openalex"
-  },
-  "https://openalex.org/I121820613": {
-    "id": "https://ror.org/05ect4e57",
-    "name": "Louisiana State University",
-    "via": "openalex"
-  },
-  "https://openalex.org/I143288331": {
-    "id": "https://ror.org/058rn5r42",
-    "name": "Hasso Plattner Institute",
-    "via": "openalex"
-  },
-  "https://openalex.org/I176453806": {
-    "id": "https://ror.org/03bnmw459",
-    "name": "University of Potsdam",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210133302": {
-    "id": "https://ror.org/02w6m7e50",
-    "name": "Universitäts-Herzzentrum Freiburg-Bad Krozingen",
-    "via": "openalex"
-  },
-  "https://openalex.org/I62916508": {
-    "id": "https://ror.org/02kkvpp62",
-    "name": "Technical University of Munich",
-    "via": "openalex"
-  },
-  "https://openalex.org/I62318514": {
-    "id": "https://ror.org/04mz5ra38",
-    "name": "University of Duisburg-Essen",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210130544": {
-    "id": "https://ror.org/03hkr1v69",
-    "name": "Leibniz Institute of Agricultural Development in Transition Economies",
-    "via": "openalex"
-  },
-  "https://openalex.org/I78650965": {
-    "id": "https://ror.org/042aqky30",
-    "name": "Technische Universität Dresden",
-    "via": "openalex"
-  },
-  "https://openalex.org/I17937529": {
-    "id": "https://ror.org/04cdgtt98",
-    "name": "German Cancer Research Center",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210151100": {
-    "id": "https://ror.org/05x8b4491",
-    "name": "DKFZ-ZMBH Alliance",
-    "via": "openalex"
-  },
-  "https://openalex.org/I122228004": {
-    "id": "https://ror.org/01xzwj424",
-    "name": "HTW Berlin - University of Applied Sciences",
-    "via": "openalex"
-  },
-  "https://openalex.org/I100066346": {
-    "id": "https://ror.org/04vnq7t77",
-    "name": "University of Stuttgart",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210139777": {
-    "id": "https://ror.org/0493xsw21",
-    "name": "Berlin Institute of Health at Charité - Universitätsmedizin Berlin",
-    "via": "openalex"
-  },
-  "https://openalex.org/I127251866": {
-    "id": "https://ror.org/032e6b942",
-    "name": "Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung",
-    "via": "openalex"
-  },
-  "https://openalex.org/I25974101": {
-    "id": "https://ror.org/00fbnyb24",
-    "name": "University of Würzburg",
-    "via": "openalex"
-  },
-  "https://openalex.org/I180437899": {
-    "id": "https://ror.org/04ers2y35",
-    "name": "University of Bremen",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210159854": {
-    "id": "https://ror.org/05b8d3w18",
-    "name": "Max Planck Institute of Molecular Cell Biology and Genetics",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210138560": {
-    "id": "https://ror.org/03mstc592",
-    "name": "European Molecular Biology Laboratory",
-    "via": "openalex"
-  },
-  "https://openalex.org/I94509681": {
-    "id": "https://ror.org/010nsgg66",
-    "name": "Technische Universität Braunschweig",
-    "via": "openalex"
-  },
-  "https://openalex.org/I1330165540": {
-    "id": "https://ror.org/03x516a66",
-    "name": "Federal Institute For Materials Research and Testing",
-    "via": "openalex"
-  },
-  "https://openalex.org/I195893171": {
-    "id": "https://ror.org/02eva5865",
-    "name": "Zuse Institute Berlin",
-    "via": "openalex"
-  },
-  "https://openalex.org/I158675288": {
-    "id": "https://ror.org/0387prb75",
-    "name": "FIZ Karlsruhe – Leibniz Institute for Information Infrastructure",
-    "via": "openalex"
-  },
-  "https://openalex.org/I74656192": {
-    "id": "https://ror.org/01y9bpm73",
-    "name": "University of Göttingen",
-    "via": "openalex"
-  },
-  "https://openalex.org/I22465464": {
-    "id": "https://ror.org/00pd74e08",
-    "name": "University of Münster",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210107867": {
-    "id": "https://ror.org/01vvnmw35",
-    "name": "Research Institute for Sustainability at GFZ",
-    "via": "openalex"
-  },
-  "https://openalex.org/I102134673": {
-    "id": "https://ror.org/05ynxx418",
-    "name": "Linköping University",
-    "via": "openalex"
-  },
-  "https://openalex.org/I196349391": {
-    "id": "https://ror.org/032000t02",
-    "name": "Universität Ulm",
-    "via": "openalex"
-  },
-  "https://openalex.org/I8204097": {
-    "id": "https://ror.org/05591te55",
-    "name": "Ludwig-Maximilians-Universität München",
-    "via": "openalex"
-  },
-  "https://openalex.org/I114112103": {
-    "id": "https://ror.org/0304hq317",
-    "name": "Leibniz University Hannover",
-    "via": "openalex"
-  },
-  "https://openalex.org/I83019370": {
-    "id": "https://ror.org/02c2kyt77",
-    "name": "Eindhoven University of Technology",
-    "via": "openalex"
-  },
-  "https://openalex.org/I1326965316": {
-    "id": "https://ror.org/022d5qt08",
-    "name": "Julius Kühn-Institut",
-    "via": "openalex"
-  },
-  "https://openalex.org/I111268130": {
-    "id": "https://ror.org/05mrzft53",
-    "name": "CSL (United Kingdom)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210153402": {
-    "id": "https://ror.org/044tc0x05",
-    "name": "CSL (Australia)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I75620049": {
-    "id": "https://ror.org/04ft0an39",
-    "name": "Ergon Energy (Australia)",
-    "via": "openalex"
-  },
-  "https://openalex.org/I161046081": {
-    "id": "https://ror.org/0245cg223",
-    "name": "University of Freiburg",
-    "via": "openalex"
-  },
-  "https://openalex.org/I161593684": {
-    "id": "https://ror.org/05f0yaq80",
-    "name": "Stockholm University",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210147256": {
-    "id": "https://ror.org/049bh0z35",
-    "name": "National Library of Sweden",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210089594": {
-    "id": "https://ror.org/00bvhmc43",
-    "name": "Spanish National Cancer Research Centre",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210095073": {
-    "id": "https://ror.org/00q3tc787",
-    "name": "Sustainability Institute",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210153923": {
-    "id": "https://ror.org/0455awd29",
-    "name": "Software Sustainability Institute",
-    "via": "openalex"
-  },
-  "https://openalex.org/I98677209": {
-    "id": "https://ror.org/01nrxwf90",
-    "name": "University of Edinburgh",
+  "https://openalex.org/I887968799": {
+    "id": "https://ror.org/04xfq0f34",
+    "name": "RWTH Aachen University",
     "via": "openalex"
   },
   "https://openalex.org/I165779595": {
@@ -474,104 +54,94 @@
     "name": "The University of Melbourne",
     "via": "openalex"
   },
-  "https://openalex.org/I2801189931": {
-    "id": "https://ror.org/052c7a780",
-    "name": "Australia Bioinformatics Resource",
+  "https://openalex.org/I196021976": {
+    "id": "https://ror.org/01b6kha49",
+    "name": "Walter and Eliza Hall Institute of Medical Research",
     "via": "openalex"
   },
-  "https://openalex.org/I4210098306": {
-    "id": "https://ror.org/00yx5cw48",
-    "name": "EMBL Australia",
+  "https://openalex.org/I4210117453": {
+    "id": "https://ror.org/02jzgtq86",
+    "name": "Dana-Farber Cancer Institute",
     "via": "openalex"
   },
-  "https://openalex.org/I1303153112": {
-    "id": "https://ror.org/02catss52",
-    "name": "European Bioinformatics Institute",
+  "https://openalex.org/I4210138560": {
+    "id": "https://ror.org/03mstc592",
+    "name": "European Molecular Biology Laboratory",
     "via": "openalex"
   },
-  "https://openalex.org/I2799803557": {
-    "id": "https://ror.org/05sd8tv96",
-    "name": "Barcelona Supercomputing Center",
+  "https://openalex.org/I161593684": {
+    "id": "https://ror.org/05f0yaq80",
+    "name": "Stockholm University",
     "via": "openalex"
   },
-  "https://openalex.org/I4210122345": {
-    "id": "https://ror.org/01z1gye03",
-    "name": "Institute for Research in Biomedicine",
+  "https://openalex.org/I2800139495": {
+    "id": "https://ror.org/04ev03g22",
+    "name": "Science for Life Laboratory",
     "via": "openalex"
   },
-  "https://openalex.org/I71999127": {
-    "id": "https://ror.org/021018s57",
-    "name": "Universitat de Barcelona",
+  "https://openalex.org/I28166907": {
+    "id": "https://ror.org/056d84691",
+    "name": "Karolinska Institutet",
     "via": "openalex"
   },
-  "https://openalex.org/I9617848": {
-    "id": "https://ror.org/03mb6wj31",
-    "name": "Universitat Politècnica de Catalunya",
+  "https://openalex.org/I86987016": {
+    "id": "https://ror.org/026vcq606",
+    "name": "KTH Royal Institute of Technology",
     "via": "openalex"
   },
-  "https://openalex.org/I4210094377": {
-    "id": "https://ror.org/00pwncn89",
-    "name": "Biobanking and Biomolecular Resources Research Infrastructure Consortium",
+  "https://openalex.org/I59553526": {
+    "id": "https://ror.org/05qghxh33",
+    "name": "Stony Brook University",
     "via": "openalex"
   },
-  "https://openalex.org/I4210160507": {
-    "id": "https://ror.org/05kje8j93",
-    "name": "Center for Life Sciences",
+  "https://openalex.org/I4210130836": {
+    "id": "https://ror.org/043pjwk57",
+    "name": "DNAnexus (United States)",
     "via": "openalex"
   },
-  "https://openalex.org/I4210111817": {
-    "id": "https://ror.org/01scq3556",
-    "name": "Denmark Technical College",
+  "https://openalex.org/I136199984": {
+    "id": "https://ror.org/03vek6s52",
+    "name": "Harvard University",
     "via": "openalex"
   },
-  "https://openalex.org/I96673099": {
-    "id": "https://ror.org/04qtj9h94",
-    "name": "Technical University of Denmark",
+  "https://openalex.org/I74973139": {
+    "id": "https://ror.org/05x2bcf33",
+    "name": "Carnegie Mellon University",
     "via": "openalex"
   },
-  "https://openalex.org/I157725225": {
-    "id": "https://ror.org/047426m28",
-    "name": "University of Illinois Urbana-Champaign",
+  "https://openalex.org/I3018134672": {
+    "id": "https://ror.org/00cfam450",
+    "name": "Helmholtz Zentrum München",
     "via": "openalex"
   },
-  "https://openalex.org/I4210135837": {
-    "id": "https://ror.org/03r10zj06",
-    "name": "National Center for Supercomputing Applications",
+  "https://openalex.org/I62916508": {
+    "id": "https://ror.org/02kkvpp62",
+    "name": "Technical University of Munich",
     "via": "openalex"
   },
-  "https://openalex.org/I153976015": {
-    "id": "https://ror.org/05njb9z20",
-    "name": "University of Ljubljana",
+  "https://openalex.org/I145311948": {
+    "id": "https://ror.org/00za53h95",
+    "name": "Johns Hopkins University",
     "via": "openalex"
   },
-  "https://openalex.org/I60858718": {
-    "id": "https://ror.org/00nt41z93",
-    "name": "University of Aveiro",
+  "https://openalex.org/I2799853436": {
+    "id": "https://ror.org/037zgn354",
+    "name": "Johns Hopkins Medicine",
     "via": "openalex"
   },
-  "https://openalex.org/I2799848540": {
-    "id": "https://ror.org/05d5mza29",
-    "name": "Center for Open Science",
+  "https://openalex.org/I8087733": {
+    "id": "https://ror.org/03a1kwz48",
+    "name": "University of Tübingen",
     "via": "openalex"
   },
-  "https://openalex.org/I4210125287": {
-    "id": "https://ror.org/03antpb48",
-    "name": "Stem Cells Australia",
+  "https://openalex.org/I2801081054": {
+    "id": "https://ror.org/04tnbqb63",
+    "name": "The Francis Crick Institute",
     "via": "openalex"
   },
-  "https://openalex.org/I157614274": {
-    "id": "https://ror.org/03p74gp79",
-    "name": "University of Cape Town",
-    "via": "openalex"
-  },
-  "https://openalex.org/I44504214": {
-    "id": "https://ror.org/03kqpb082",
-    "name": "Czech Technical University in Prague",
-    "via": "openalex"
-  },
-  "https://openalex.org/I4210166741": {
-    "id": "https://ror.org/05q9m0937",
-    "name": "University of Klagenfurt",
+  "https://openalex.org/I66068411": {
+    "id": "https://ror.org/05k8wg936",
+    "name": "Genome Institute of Singapore",
     "via": "openalex"
   },
   "https://openalex.org/I170486558": {
@@ -579,224 +149,404 @@
     "name": "Universitat Pompeu Fabra",
     "via": "openalex"
   },
-  "https://openalex.org/I4210156109": {
-    "id": "https://ror.org/042nkmz09",
-    "name": "Hospital del Mar Research Institute",
+  "https://openalex.org/I4210132884": {
+    "id": "https://ror.org/03kpps236",
+    "name": "Barcelona Institute of Science and Technology",
     "via": "openalex"
   },
-  "https://openalex.org/I5681781": {
-    "id": "https://ror.org/00892tw58",
-    "name": "The University of Adelaide",
+  "https://openalex.org/I4210137962": {
+    "id": "https://ror.org/03wyzt892",
+    "name": "Centre for Genomic Regulation",
     "via": "openalex"
   },
-  "https://openalex.org/I1310815967": {
-    "id": "https://ror.org/01p7k1986",
-    "name": "Central European Institute of Technology",
+  "https://openalex.org/I4210090411": {
+    "id": "https://ror.org/00971b260",
+    "name": "Google DeepMind (United Kingdom)",
     "via": "openalex"
   },
-  "https://openalex.org/I21449261": {
-    "id": "https://ror.org/02j46qs45",
-    "name": "Masaryk University",
+  "https://openalex.org/I139264467": {
+    "id": "https://ror.org/04h9pn542",
+    "name": "Seoul National University",
     "via": "openalex"
   },
-  "https://openalex.org/I4210155092": {
-    "id": "https://ror.org/0496n6574",
-    "name": "Czech Academy of Sciences, Institute of Computer Science",
+  "https://openalex.org/I62318514": {
+    "id": "https://ror.org/04mz5ra38",
+    "name": "University of Duisburg-Essen",
     "via": "openalex"
   },
-  "https://openalex.org/I56085075": {
-    "id": "https://ror.org/03z77qz90",
-    "name": "University of Tartu",
+  "https://openalex.org/I130769515": {
+    "id": "https://ror.org/04p491231",
+    "name": "Pennsylvania State University",
     "via": "openalex"
   },
-  "https://openalex.org/I162524378": {
-    "id": "https://ror.org/057g20z61",
-    "name": "Science and Technology Facilities Council",
+  "https://openalex.org/I161046081": {
+    "id": "https://ror.org/0245cg223",
+    "name": "University of Freiburg",
     "via": "openalex"
   },
-  "https://openalex.org/I42894916": {
-    "id": "https://ror.org/03q397159",
-    "name": "Data61",
+  "https://openalex.org/I1316902750": {
+    "id": "https://ror.org/03xjacd83",
+    "name": "Cleveland Clinic",
     "via": "openalex"
   },
-  "https://openalex.org/I4210154382": {
-    "id": "https://ror.org/053v53919",
-    "name": "AGRF Ltd",
+  "https://openalex.org/I3019308854": {
+    "id": "https://ror.org/01xf75524",
+    "name": "Moffitt Cancer Center",
     "via": "openalex"
   },
-  "https://openalex.org/I145872427": {
-    "id": "https://ror.org/016xsfp80",
-    "name": "Radboud University Nijmegen",
+  "https://openalex.org/I1343052199": {
+    "id": "https://ror.org/00t60zh31",
+    "name": "Kaiser Permanente",
     "via": "openalex"
   },
-  "https://openalex.org/I4210110528": {
-    "id": "https://ror.org/01nyatq71",
-    "name": "Institute of Molecular Biology and Pathology",
+  "https://openalex.org/I2799829267": {
+    "id": "https://ror.org/00vn06n10",
+    "name": "Simula Research Laboratory",
     "via": "openalex"
   },
-  "https://openalex.org/I861853513": {
-    "id": "https://ror.org/02be6w209",
-    "name": "Sapienza University of Rome",
+  "https://openalex.org/I4210141755": {
+    "id": "https://ror.org/038kxsm48",
+    "name": "Institut de Génétique, Environnement et Protection des Plantes",
     "via": "openalex"
   },
-  "https://openalex.org/I56590836": {
-    "id": "https://ror.org/02bfwt286",
-    "name": "Monash University",
+  "https://openalex.org/I150870154": {
+    "id": "https://ror.org/02egcpy68",
+    "name": "Indian Institute of Management Ahmedabad",
     "via": "openalex"
   },
-  "https://openalex.org/I43439940": {
-    "id": "https://ror.org/01ryk1543",
-    "name": "University of Southampton",
+  "https://openalex.org/I4210153543": {
+    "id": "https://ror.org/050589e39",
+    "name": "European Molecular Biology Laboratory",
     "via": "openalex"
   },
-  "https://openalex.org/I112260969": {
-    "id": "https://ror.org/043q8yx54",
-    "name": "Ontario Institute for Cancer Research",
+  "https://openalex.org/I198244214": {
+    "id": "https://ror.org/01a8ajp46",
+    "name": "Université Clermont Auvergne",
     "via": "openalex"
   },
-  "https://openalex.org/I4210133686": {
-    "id": "https://ror.org/03vebqe40",
-    "name": "Software Carpentry",
+  "https://openalex.org/I2738703131": {
+    "id": "https://ror.org/00jjx8s55",
+    "name": "Commissariat à l'Énergie Atomique et aux Énergies Alternatives",
     "via": "openalex"
   },
-  "https://openalex.org/I51556381": {
-    "id": "https://ror.org/0153tk833",
-    "name": "University of Virginia",
+  "https://openalex.org/I3020098449": {
+    "id": "https://ror.org/02mg6n827",
+    "name": "CEA Grenoble",
     "via": "openalex"
   },
-  "https://openalex.org/I1291137007": {
-    "id": "https://ror.org/00b93bs30",
-    "name": "American Astronomical Society",
+  "https://openalex.org/I4210110641": {
+    "id": "https://ror.org/01rs1gy10",
+    "name": "CEA Cadarache",
     "via": "openalex"
   },
-  "https://openalex.org/I160664669": {
-    "id": "https://ror.org/00var5q80",
-    "name": "American Geophysical Union",
+  "https://openalex.org/I28407311": {
+    "id": "https://ror.org/027m9bs27",
+    "name": "University of Manchester",
     "via": "openalex"
   },
-  "https://openalex.org/I4210124175": {
-    "id": "https://ror.org/03c3r2d17",
-    "name": "Center for Astrophysics Harvard & Smithsonian",
+  "https://openalex.org/I134446601": {
+    "id": "https://ror.org/02xewxa75",
+    "name": "Berkeley College",
     "via": "openalex"
   },
-  "https://openalex.org/I4389425334": {
-    "id": "https://ror.org/04bd6je18",
-    "name": "Taylor and Francis (United Kingdom)",
+  "https://openalex.org/I95457486": {
+    "id": "https://ror.org/01an7q238",
+    "name": "University of California, Berkeley",
     "via": "openalex"
   },
-  "https://openalex.org/I4387152643": {
-    "id": "https://ror.org/03yty8687",
-    "name": "GigaScience Press",
+  "https://openalex.org/I26092322": {
+    "id": "https://ror.org/05bk57929",
+    "name": "Stellenbosch University",
     "via": "openalex"
   },
-  "https://openalex.org/I4210124223": {
-    "id": "https://ror.org/02twcfp32",
-    "name": "Crossref",
+  "https://openalex.org/I4210098317": {
+    "id": "https://ror.org/00zeq0353",
+    "name": "Quansight (United States)",
     "via": "openalex"
   },
-  "https://openalex.org/I4210145204": {
-    "id": "https://ror.org/04wxnsj81",
-    "name": "DataCite",
+  "https://openalex.org/I94722563": {
+    "id": "https://ror.org/05n3dz165",
+    "name": "University of Jyväskylä",
     "via": "openalex"
   },
-  "https://openalex.org/I1298748095": {
-    "id": "https://ror.org/00dpx3e98",
-    "name": "American Meteorological Society",
+  "https://openalex.org/I241749": {
+    "id": "https://ror.org/013meh722",
+    "name": "University of Cambridge",
     "via": "openalex"
   },
-  "https://openalex.org/I3132238960": {
-    "id": "https://ror.org/01n002310",
-    "name": "Institute of Electrical and Electronics Engineers",
+  "https://openalex.org/I4210119349": {
+    "id": "https://ror.org/01t1kq612",
+    "name": "Karlsruhe University of Education",
     "via": "openalex"
   },
-  "https://openalex.org/I108652713": {
-    "id": "https://ror.org/008zgvp64",
-    "name": "Public Library of Science",
+  "https://openalex.org/I4210121859": {
+    "id": "https://ror.org/02xfc1977",
+    "name": "Enthought (United States)",
     "via": "openalex"
   },
-  "https://openalex.org/I2802626578": {
-    "id": "https://ror.org/0336mm561",
-    "name": "Oxford University Press (United Kingdom)",
+  "https://openalex.org/I1291425158": {
+    "id": "https://ror.org/00njsd438",
+    "name": "Google (United States)",
     "via": "openalex"
   },
-  "https://openalex.org/I4210126990": {
-    "id": "https://ror.org/02rt9z237",
-    "name": "Hindawi (United Kingdom)",
+  "https://openalex.org/I185261750": {
+    "id": "https://ror.org/03dbr7087",
+    "name": "University of Toronto",
     "via": "openalex"
   },
-  "https://openalex.org/I4210101920": {
-    "id": "https://ror.org/019tc7185",
-    "name": "Faculty of 1000 (United Kingdom)",
+  "https://openalex.org/I4210166946": {
+    "id": "https://ror.org/05hsqsk33",
+    "name": "Imaging Center",
     "via": "openalex"
   },
-  "https://openalex.org/I4210113551": {
-    "id": "https://ror.org/01xsmwp79",
-    "name": "Springer Nature (United States)",
+  "https://openalex.org/I79619799": {
+    "id": "https://ror.org/03angcq70",
+    "name": "University of Birmingham",
     "via": "openalex"
   },
-  "https://openalex.org/I4210131007": {
-    "id": "https://ror.org/02xe89706",
-    "name": "John Wiley & Sons (United States)",
+  "https://openalex.org/I84392919": {
+    "id": "https://ror.org/00kx1jb78",
+    "name": "Temple University",
     "via": "openalex"
   },
-  "https://openalex.org/I107766831": {
-    "id": "https://ror.org/05cvfcr44",
-    "name": "NSF National Center for Atmospheric Research",
+  "https://openalex.org/I4210100430": {
+    "id": "https://ror.org/014f9c269",
+    "name": "Google (Switzerland)",
     "via": "openalex"
   },
-  "https://openalex.org/I2800289517": {
-    "id": "https://ror.org/03ztgj037",
-    "name": "German Climate Computing Centre",
+  "https://openalex.org/I1311688040": {
+    "id": "https://ror.org/04mv4n011",
+    "name": "Amazon (United States)",
     "via": "openalex"
   },
-  "https://openalex.org/I4210109524": {
-    "id": "https://ror.org/018nw3344",
-    "name": "AstraZeneca (Australia)",
+  "https://openalex.org/I141945490": {
+    "id": "https://ror.org/03rmrcq20",
+    "name": "University of British Columbia",
     "via": "openalex"
   },
-  "https://openalex.org/I4210143795": {
-    "id": "https://ror.org/04wwrrg31",
-    "name": "AstraZeneca (Sweden)",
+  "https://openalex.org/I111112146": {
+    "id": "https://ror.org/0443cwa12",
+    "name": "Tallinn University of Technology",
     "via": "openalex"
   },
-  "https://openalex.org/I121883995": {
-    "id": "https://ror.org/052r2xn60",
-    "name": "Johannes Kepler University of Linz",
+  "https://openalex.org/I165733156": {
+    "id": "https://ror.org/00te3t702",
+    "name": "University of Georgia",
     "via": "openalex"
   },
-  "https://openalex.org/I137982388": {
-    "id": "https://ror.org/04yzcpd71",
-    "name": "Janssen (Belgium)",
+  "https://openalex.org/I4210148954": {
+    "id": "https://ror.org/056rz2k22",
+    "name": "Ibs (France)",
     "via": "openalex"
   },
-  "https://openalex.org/I4210151386": {
-    "id": "https://ror.org/05af73403",
-    "name": "Janssen (United States)",
+  "https://openalex.org/I40120149": {
+    "id": "https://ror.org/052gg0110",
+    "name": "University of Oxford",
     "via": "openalex"
   },
-  "https://openalex.org/I4210145716": {
-    "id": "https://ror.org/043r2f182",
-    "name": "IDEAconsult",
+  "https://openalex.org/I1343871089": {
+    "id": "https://ror.org/01e41cf67",
+    "name": "Los Alamos National Laboratory",
     "via": "openalex"
   },
-  "https://openalex.org/I142208455": {
-    "id": "https://ror.org/05x8mcb75",
-    "name": "VSB - Technical University of Ostrava",
+  "https://openalex.org/I1279686153": {
+    "id": "https://ror.org/02885vs25",
+    "name": "Fluor (United States)",
     "via": "openalex"
   },
-  "https://openalex.org/I4210114974": {
-    "id": "https://ror.org/02kcbn207",
-    "name": "IMEC",
+  "https://openalex.org/I204250578": {
+    "id": "https://ror.org/04gyf1771",
+    "name": "University of California, Irvine",
     "via": "openalex"
   },
-  "https://openalex.org/I204136569": {
-    "id": "https://ror.org/05mzfcs16",
-    "name": "The Open University",
+  "https://openalex.org/I100005738": {
+    "id": "https://ror.org/047rhhm47",
+    "name": "Brigham Young University",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4210104575": {
+    "id": "https://ror.org/0164jks53",
+    "name": "Anaconda (United States)",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4210146710": {
+    "id": "https://ror.org/03zzw1w08",
+    "name": "Mayo Clinic in Florida",
+    "via": "openalex"
+  },
+  "https://openalex.org/I149919469": {
+    "id": "https://ror.org/001gpfp45",
+    "name": "California Polytechnic State University",
+    "via": "openalex"
+  },
+  "https://openalex.org/I118501908": {
+    "id": "https://ror.org/055f7t516",
+    "name": "National Research University Higher School of Economics",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4210121988": {
+    "id": "https://ror.org/036cy3843",
+    "name": "Film Independent",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4210128657": {
+    "id": "https://ror.org/03nrpad60",
+    "name": "WayRay (Russia)",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4210165827": {
+    "id": "https://ror.org/05qj99v29",
+    "name": "Skolkovo Foundation",
+    "via": "openalex"
+  },
+  "https://openalex.org/I1334950195": {
+    "id": "https://ror.org/05j7fep28",
+    "name": "Australian Nuclear Science and Technology Organisation",
+    "via": "openalex"
+  },
+  "https://openalex.org/I201448701": {
+    "id": "https://ror.org/00cvxb145",
+    "name": "University of Washington",
+    "via": "openalex"
+  },
+  "https://openalex.org/I177605424": {
+    "id": "https://ror.org/028vqfs63",
+    "name": "Amherst College",
+    "via": "openalex"
+  },
+  "https://openalex.org/I24603500": {
+    "id": "https://ror.org/0072zz521",
+    "name": "University of Massachusetts Amherst",
+    "via": "openalex"
+  },
+  "https://openalex.org/I193170854": {
+    "id": "https://ror.org/04r739x86",
+    "name": "Bruker (United States)",
+    "via": "openalex"
+  },
+  "https://openalex.org/I92715842": {
+    "id": "https://ror.org/040t43x18",
+    "name": "University of West Bohemia in Pilsen",
+    "via": "openalex"
+  },
+  "https://openalex.org/I86519309": {
+    "id": "https://ror.org/00hj54h04",
+    "name": "The University of Texas at Austin",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4388482684": {
+    "id": "https://ror.org/02w403h65",
+    "name": "Utah State University Space Dynamics Laboratory",
+    "via": "openalex"
+  },
+  "https://openalex.org/I110200422": {
+    "id": "https://ror.org/0176yjw32",
+    "name": "Universidade Federal de Minas Gerais",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4210148186": {
+    "id": "https://ror.org/04d06q394",
+    "name": "Google (Canada)",
     "via": "openalex"
   },
   "https://openalex.org/I31512782": {
     "id": "https://ror.org/05n911h24",
     "name": "Technical University of Darmstadt",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4387154989": {
+    "id": "https://ror.org/02grspc61",
+    "name": "Hugging Face",
+    "via": "openalex"
+  },
+  "https://openalex.org/I1174212": {
+    "id": "https://ror.org/03taz7m60",
+    "name": "University of Southern California",
+    "via": "openalex"
+  },
+  "https://openalex.org/I204465549": {
+    "id": "https://ror.org/01yc7t268",
+    "name": "Washington University in St. Louis",
+    "via": "openalex"
+  },
+  "https://openalex.org/I887064364": {
+    "id": "https://ror.org/04dkp9463",
+    "name": "University of Amsterdam",
+    "via": "openalex"
+  },
+  "https://openalex.org/I114017466": {
+    "id": "https://ror.org/03f0f6041",
+    "name": "University of Technology Sydney",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4210098931": {
+    "id": "https://ror.org/010brsj79",
+    "name": "Quantitative BioSciences",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4210112663": {
+    "id": "https://ror.org/0259fwx54",
+    "name": "ZB MED - Information Centre for Life Sciences",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4210098178": {
+    "id": "https://ror.org/01qnqmc89",
+    "name": "VIB-UGent Center for Plant Systems Biology",
+    "via": "openalex"
+  },
+  "https://openalex.org/I2799803557": {
+    "id": "https://ror.org/05sd8tv96",
+    "name": "Barcelona Supercomputing Center",
+    "via": "openalex"
+  },
+  "https://openalex.org/I9617848": {
+    "id": "https://ror.org/03mb6wj31",
+    "name": "Universitat Politècnica de Catalunya",
+    "via": "openalex"
+  },
+  "https://openalex.org/I88060688": {
+    "id": "https://ror.org/03n6nwv02",
+    "name": "Universidad Politécnica de Madrid",
+    "via": "openalex"
+  },
+  "https://openalex.org/I2800759272": {
+    "id": "https://ror.org/03jdxdk20",
+    "name": "Center for Advanced Studies Research and Development in Sardinia",
+    "via": "openalex"
+  },
+  "https://openalex.org/I27577105": {
+    "id": "https://ror.org/03265fv13",
+    "name": "University College Cork",
+    "via": "openalex"
+  },
+  "https://openalex.org/I1293303778": {
+    "id": "https://ror.org/0496vr396",
+    "name": "Flanders Marine Institute",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4665924": {
+    "id": "https://ror.org/03zdwsf69",
+    "name": "University of Rostock",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4210101898": {
+    "id": "https://ror.org/018afyw53",
+    "name": "GESIS - Leibniz-Institute for the Social Sciences",
+    "via": "openalex"
+  },
+  "https://openalex.org/I44260953": {
+    "id": "https://ror.org/024z2rq82",
+    "name": "Heinrich Heine University Düsseldorf",
+    "via": "openalex"
+  },
+  "https://openalex.org/I4210137815": {
+    "id": "https://ror.org/03rks9355",
+    "name": "Naval Group (France)",
+    "via": "openalex"
+  },
+  "https://openalex.org/I60922564": {
+    "id": "https://ror.org/04nzrnx83",
+    "name": "Naver (South Korea)",
     "via": "openalex"
   }
 }

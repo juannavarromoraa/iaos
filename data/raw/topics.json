@@ -2,118 +2,248 @@
   "topics": [
     {
       "id": 0,
-      "label": "and, software, research, in, to",
+      "label": "and, of, the, is, for",
       "keywords": [
         "and",
-        "software",
-        "research",
-        "in",
-        "to",
         "of",
         "the",
-        "that",
-        "practices",
-        "this"
+        "is",
+        "for",
+        "to",
+        "reads",
+        "alignment",
+        "in",
+        "data"
       ]
     },
     {
       "id": 1,
-      "label": "the, of, learning, machine, and",
+      "label": "the, mentions, software, of, we",
       "keywords": [
         "the",
+        "mentions",
+        "software",
         "of",
-        "learning",
-        "machine",
+        "we",
+        "in",
         "and",
+        "dataset",
+        "as",
+        "topic"
+      ]
+    },
+    {
+      "id": 2,
+      "label": "the, and, workflow, of, in",
+      "keywords": [
+        "the",
+        "and",
+        "workflow",
+        "of",
+        "in",
+        "provenance",
         "to",
-        "data",
-        "cso",
-        "models",
-        "industry"
+        "workflows",
+        "numpy",
+        "array"
+      ]
+    },
+    {
+      "id": 3,
+      "label": "software, to, metadata, scientific, and",
+      "keywords": [
+        "software",
+        "to",
+        "metadata",
+        "scientific",
+        "and",
+        "their",
+        "in",
+        "of",
+        "ro",
+        "crate"
       ]
     }
   ],
   "assignments": [
     {
-      "doi": "https://doi.org/10.1038/sdata.2016.18",
+      "doi": "https://doi.org/10.1093/bioinformatics/btp352",
       "topic_id": 0,
-      "probability": 0.4180272675316086,
+      "probability": 0.6854377793129041,
       "threshold": 0.3,
       "kept": true
     },
     {
-      "doi": "https://doi.org/10.1038/sdata.2016.18",
-      "topic_id": 1,
-      "probability": 0.4260212541465591,
-      "threshold": 0.3,
-      "kept": true
-    },
-    {
-      "doi": "https://doi.org/10.12688/f1000research.23224.2",
+      "doi": "https://doi.org/10.1093/bioinformatics/btp324",
       "topic_id": 0,
-      "probability": 1.0,
+      "probability": 0.6617223819279435,
       "threshold": 0.3,
       "kept": true
     },
     {
-      "doi": "https://doi.org/10.12688/f1000research.11407.1",
+      "doi": "https://doi.org/10.1093/bioinformatics/bts635",
       "topic_id": 0,
       "probability": 1.0,
       "threshold": 0.3,
       "kept": true
     },
     {
-      "doi": "https://doi.org/10.1371/journal.pcbi.1005412",
+      "doi": "https://doi.org/10.1093/bioinformatics/btu170",
+      "topic_id": 0,
+      "probability": 0.5728666309964784,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1093/bioinformatics/btt656",
+      "topic_id": 0,
+      "probability": 0.5909452592067758,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1186/s13059-014-0550-8",
+      "topic_id": 0,
+      "probability": 0.6913568703200242,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1093/bioinformatics/btu638",
       "topic_id": 0,
       "probability": 1.0,
       "threshold": 0.3,
       "kept": true
     },
     {
-      "doi": "https://doi.org/10.12688/f1000research.26932.2",
+      "doi": "https://doi.org/10.1093/bioinformatics/btw354",
       "topic_id": 0,
-      "probability": 0.4783397956095303,
-      "threshold": 0.3,
-      "kept": true
-    },
-    {
-      "doi": "https://doi.org/10.12688/f1000research.26932.2",
-      "topic_id": 1,
-      "probability": 0.448660268715842,
-      "threshold": 0.3,
-      "kept": true
-    },
-    {
-      "doi": "https://doi.org/10.1186/s13321-020-00428-5",
-      "topic_id": 1,
       "probability": 1.0,
       "threshold": 0.3,
       "kept": true
     },
     {
-      "doi": "https://doi.org/10.1007/s00799-021-00305-y",
-      "topic_id": 1,
+      "doi": "https://doi.org/10.1186/s13059-017-1382-0",
+      "topic_id": 0,
       "probability": 1.0,
       "threshold": 0.3,
       "kept": true
     },
     {
-      "doi": "https://doi.org/10.1371/journal.pcbi.1005510",
+      "doi": "https://doi.org/10.1093/bioinformatics/bty191",
       "topic_id": 0,
-      "probability": 0.5593529819122073,
+      "probability": 1.0,
       "threshold": 0.3,
       "kept": true
     },
     {
-      "doi": "https://doi.org/10.1371/journal.pcbi.1005510",
+      "doi": "https://doi.org/10.1186/s13059-019-1891-0",
+      "topic_id": 0,
+      "probability": 0.4265538299803734,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41586-021-03819-2",
+      "topic_id": 0,
+      "probability": 1.0,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1093/bioinformatics/bts480",
+      "topic_id": 2,
+      "probability": 1.0,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1093/nar/gkac247",
+      "topic_id": 0,
+      "probability": 0.32917739721287054,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41586-020-2649-2",
+      "topic_id": 2,
+      "probability": 1.0,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1038/s41592-019-0686-2",
+      "topic_id": 2,
+      "probability": 1.0,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.48550/arxiv.2203.05794",
       "topic_id": 1,
-      "probability": 0.41200682379043047,
+      "probability": 1.0,
       "threshold": 0.3,
       "kept": true
     },
     {
       "doi": "https://doi.org/10.18653/v1/d19-1410",
       "topic_id": 1,
+      "probability": 1.0,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.18653/v1/2020.emnlp-demos.6",
+      "topic_id": 1,
+      "probability": 0.36623546581733,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1109/bigdata47090.2019.9006447",
+      "topic_id": 3,
+      "probability": 1.0,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1162/qss_a_00167",
+      "topic_id": 3,
+      "probability": 1.0,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.3233/ds-210053",
+      "topic_id": 3,
+      "probability": 0.4174896062822352,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1145/3459637.3482017",
+      "topic_id": 1,
+      "probability": 0.36758903377882274,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1002/asi.24454",
+      "topic_id": 1,
+      "probability": 1.0,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.48550/arxiv.2209.00693",
+      "topic_id": 1,
+      "probability": 1.0,
+      "threshold": 0.3,
+      "kept": true
+    },
+    {
+      "doi": "https://doi.org/10.1093/bioinformatics/btae464",
+      "topic_id": 3,
       "probability": 1.0,
       "threshold": 0.3,
       "kept": true
