@@ -84,7 +84,9 @@ def build_graph() -> Graph:
             g.add((p_u, IAOS["abstract"], Literal(abst)))
         if w.get("publication_year"):
             g.add((p_u, IAOS.year, Literal(w["publication_year"], datatype=XSD.gYear)))
-        if w.get("primary_location",{}).get("source",{}).get("display_name"):
+        primary_loc = w.get("primary_location") or {}
+        source = primary_loc.get("source")
+        if source and isinstance(source, dict) and source.get("display_name"):
             g.add((p_u, IAOS.venue,
                    Literal(w["primary_location"]["source"]["display_name"])))
 
@@ -223,7 +225,7 @@ def main():
     out_ttl = KG_DIR / "kg.ttl"
     out_nq  = KG_DIR / "kg.nq"
     g.serialize(out_ttl, format="turtle")
-    g.serialize(out_nq,  format="nquads")
+    g.serialize(out_nq,  format="nt")
     print(f"✓ {len(g):,} triples → {out_ttl}")
     print(f"  also as N-Quads → {out_nq}")
 

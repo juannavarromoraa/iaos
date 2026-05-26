@@ -1,31 +1,10 @@
 doi,notes
-10.1093/bioinformatics/btaa001,replace with your real DOIs
-10.1093/bioinformatics/btaa002,one per row
-10.5281/zenodo.999,must have an Acknowledgements section
-10.1109/ICSE.2019.00012,must mention software or have a public repo
-10.1145/3340531.3411875,
-10.18653/v1/2020.acl-main.747,
-10.5194/gmd-13-1-2020,
-10.1007/s00799-021-00305-y,
-10.1162/dint_a_00100,
-10.1093/jamia/ocab023,
-10.1002/spe.2922,
-10.1109/MCSE.2022.3157091,
-10.1186/s13321-020-00428-5,
-10.1109/EuroSP54519.2022.00010,
-10.5281/zenodo.5651521,
-10.1186/s13029-021-00130-w,
-10.7717/peerj-cs.421,
-10.1093/bib/bbab129,
-10.1038/s41597-021-00928-5,
-10.1145/3461001.3471157,
-10.1162/qss_a_00136,
-10.5334/dsj-2021-016,
-10.1186/s13321-021-00513-3,
-10.1109/MS.2022.3174150,
-10.7717/peerj-cs.872,
-10.1093/jamia/ocac045,
-10.1162/dint_a_00177,
-10.5281/zenodo.6620235,
-10.1145/3597503.3623325,
-10.1109/eScience.2022.00012,
+10.1038/sdata.2016.18,The FAIR guiding principles for scientific data management
+10.12688/f1000research.23224.2,Sustainable research software for computational research
+10.12688/f1000research.11407.1,Four simple recommendations to encourage best practices
+10.1371/journal.pcbi.1005412,Ten simple rules for making research software more robust
+10.12688/f1000research.26932.2,Recognizing the value of software citation
+10.1186/s13321-020-00428-5,Open science and open software in cheminformatics
+10.1007/s00799-021-00305-y,Knowledge graphs for research software
+10.1371/journal.pcbi.1005510,Good enough practices in scientific computing
+10.18653/v1/D19-1410,Sentence-BERT Sentence Embeddings

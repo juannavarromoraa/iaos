@@ -1,0 +1,16 @@
+[
+  {
+    "paper1": "https://doi.org/10.12688/f1000research.23224.2",
+    "paper2": "https://doi.org/10.12688/f1000research.11407.1",
+    "score": 0.7603,
+    "threshold": 0.7,
+    "method": "cosine(all-MiniLM-L6-v2)"
+  },
+  {
+    "paper1": "https://doi.org/10.12688/f1000research.11407.1",
+    "paper2": "https://doi.org/10.12688/f1000research.26932.2",
+    "score": 0.72,
+    "threshold": 0.7,
+    "method": "cosine(all-MiniLM-L6-v2)"
+  }
+]

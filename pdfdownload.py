@@ -4,8 +4,8 @@ import requests
 import time
 
 # 1. Configuración de rutas
-CSV_PATH = "iaos/data/papers_corpus.csv"
-PDF_DIR = "iaos/data/pdfs"
+CSV_PATH = "data/papers_corpus.csv"
+PDF_DIR = "data/pdfs"
 
 # Unpaywall exige un email real para usar su API pública
 EMAIL = "juan.navarro.mora@alumnos.upm.es" 

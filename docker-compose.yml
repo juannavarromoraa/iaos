@@ -5,8 +5,11 @@ services:
   # ----- GROBID for PDF parsing & TEI XML ----------------------------------
   grobid:
     image: lfoppiano/grobid:0.8.0
+    platform: linux/amd64
     ports:
       - "8070:8070"
+    environment:
+      - JAVA_OPTS=-Xmx2g -XX:-UseContainerSupport
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8070/api/isalive"]
       interval: 30s
