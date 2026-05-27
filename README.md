@@ -95,7 +95,6 @@ curl -X POST "http://localhost:3030/iaos/query" \
 
 ### Opción B — entorno local
 ```
-
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -166,24 +165,11 @@ Estos son los modelos que **forman parte del experimento mismo** y se documentan
 
 Estos sí están **integrados en el código entregable** y se ejecutan al correr el pipeline. Los anteriores (ChatGPT, Claude, Copilot) **no** se ejecutan en producción.
 
-### 8.3. Para qué se ha usado IA generativa (uso humano)
-
-| Actividad | Uso de IA | Validación humana |
-|---|---|---|
-| Diseño inicial del esquema | Lluvia de clases candidatas con ChatGPT/Claude | Revisada y modificada por el grupo en pizarra antes de implementar |
-| Corrección del diagrama tras feedback del profesor | Claude propuso patrón n-ario y atributos de threshold | Cada cambio fue contrastado con el feedback escrito del profesor (sección 1 de `docs/MODEL_JUSTIFICATIONS.md`) |
-| Redacción de la ontología en Turtle | Borrador de las clases y propiedades con Claude | Revisión sintáctica con `rdflib`; ajustes manuales de prefijos y dominios |
-| Restricciones SHACL | Borrador con Claude; severidades ajustadas a mano | Validación con `pyshacl` sobre el KG sintético antes de aceptar |
-| Scripts Python | Esqueleto y docstrings con Claude/Copilot | Ejecutados y verificados con datos reales / sintéticos por el grupo |
-| Queries SPARQL | Pensadas por nosotros, escritas con Claude | Ejecutadas contra `kg_sample.ttl` y comparadas con resultados esperados manuales |
-| README, EXPERIMENT_DESIGN, WORKFLOW, MODEL_JUSTIFICATIONS | Borrador con Claude | Editados y completados a mano por el grupo (datos del grupo, decisiones internas) |
-| Presentación oral | Outline con Claude | Practicada y ajustada por cada miembro del grupo |
-
-### 8.4. Política de revisión
+### 8.3. Política de revisión
 
 Cada artefacto generado con asistencia de IA pasó por al menos un miembro del grupo antes de quedar en `main`. Cada acción de la IA fue revisada por un humano.
 
-### 8.5. Limitaciones conocidas
+### 8.4. Limitaciones conocidas
 
 - Copilot puede sugerir código con problemas de licencia, las funciones aceptadas son utilitarias estándar (parsing JSON, formato de fechas, etc.) sin contenido protegido.
 
